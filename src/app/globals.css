@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary: #cd3c49;
+  --primary-light: #e05a66;
+  --secondary: #f68500;
+  --secondary-light: #ffb347;
+  --accent: #ad832c;
+  --accent-light: #e2c98a;
+
+  --muted: #9e9e9e;
+
+  --text-black: #110a00;
+  --text-white: #ffffff;
+  --text-gray: #5c5c5c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-muted: var(--muted);
+
+  --color-text-black: var(--text-black);
+  --color-text-white: var(--text-white);
+  --color-text-gray: var(--text-gray);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --primary: #8a2230;
+  --primary-light: #a23a48;
+  --secondary: #b36b00;
+  --secondary-light: #ffb347;
+  --accent: #ad832c;
+  --accent-light: #e2c98a;
+
+  --muted: #5c5c5c;
+
+  --text-black: #ffffff;
+  --text-white: #110a00;
+  --text-gray: #bdbdbd;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Lexend", sans-serif;
+}
