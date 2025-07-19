@@ -1,5 +1,7 @@
-import { Button } from "@/components/ui";
+import { Button } from "@/components/common";
 import Image from "next/image";
+
+// no hooks and NO on click events in this file
 
 export default function Home() {
   return (

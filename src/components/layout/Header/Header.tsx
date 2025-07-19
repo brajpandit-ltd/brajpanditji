@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui";
+import { Button } from "@/components/common";
 import Menu from "./Menu";
 import { header } from "@/constants/static.json";
 
@@ -19,7 +19,7 @@ const Header = () => {
           wrapperClass="flex-1 justify-center"
         />
 
-        <Button variant="primary" label="Book Your Panditji" />
+        <Button variant="secondary" label="Book Your Panditji" size="small" />
       </nav>
 
       <nav className="flex items-center justify-between gap-6 text-sm font-medium md:hidden">

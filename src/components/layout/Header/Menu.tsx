@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "@/components/ui";
+import { Button } from "@/components/common";
 import Link from "next/link";
 
 interface MenuItem {
