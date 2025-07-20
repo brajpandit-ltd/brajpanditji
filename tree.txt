@@ -1,0 +1,123 @@
+brajpanditji/
+├── .gitignore
+├── eslint.config.mjs
+├── Home Page.png
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public/
+│   ├── assets/
+│   │   ├── home-hero-light.jpg
+│   │   └── home-hero.jpg
+│   └── braj-pandit-logo.svg
+├── README.md
+├── src/
+│   ├── app/
+│   │   ├── (admin)/
+│   │   │   ├── blogs/
+│   │   │   │   └── page.tsx
+│   │   │   ├── dashboard/
+│   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── users/
+│   │   │       └── page.tsx
+│   │   ├── (pages)/
+│   │   │   ├── about-us/
+│   │   │   │   └── page.tsx
+│   │   │   ├── astrology/
+│   │   │   │   └── page.tsx
+│   │   │   ├── blogs/
+│   │   │   │   └── page.tsx
+│   │   │   ├── braj-yatra/
+│   │   │   │   └── page.tsx
+│   │   │   ├── brajshop/
+│   │   │   │   └── page.tsx
+│   │   │   ├── horoscope/
+│   │   │   │   └── page.tsx
+│   │   │   └── services/
+│   │   │       └── page.tsx
+│   │   ├── (user)/
+│   │   │   ├── blogs/
+│   │   │   │   └── page.tsx
+│   │   │   ├── cart/
+│   │   │   │   └── page.tsx
+│   │   │   ├── home/
+│   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── live-darshan/
+│   │   │       └── page.tsx
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   ├── login/
+│   │   │   │   │   └── route.ts
+│   │   │   │   └── register/
+│   │   │   │       └── route.ts
+│   │   │   ├── blogs/
+│   │   │   │   └── route.ts
+│   │   │   ├── daashboard/
+│   │   │   │   └── route.ts
+│   │   │   └── user/
+│   │   │       └── route.ts
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── assets/
+│   │   └── data/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── Model.tsx
+│   │   │   ├── ThemeToggle.tsx
+│   │   │   └── Toast.tsx
+│   │   ├── input/
+│   │   │   └── index.ts
+│   │   └── layout/
+│   │       ├── Footer.tsx
+│   │       ├── Header/
+│   │       │   ├── Header.tsx
+│   │       │   └── Menu.tsx
+│   │       └── index.ts
+│   ├── constants/
+│   │   └── static.json
+│   ├── context/
+│   │   ├── AdminContext.tsx
+│   │   ├── AuthContext.tsx
+│   │   └── CartContext.tsx
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   ├── useCart.ts
+│   │   └── useTranslation.ts
+│   ├── lib/
+│   │   ├── auth.ts
+│   │   ├── constants.ts
+│   │   ├── db.ts
+│   │   └── middleware.ts
+│   ├── locales/
+│   │   ├── en.json
+│   │   └── hi.json
+│   ├── middleware.ts
+│   ├── providers/
+│   │   └── themeProvider.tsx
+│   ├── services/
+│   │   ├── admin/
+│   │   │   └── dashboardService.ts
+│   │   ├── common/
+│   │   │   └── api.ts
+│   │   └── user/
+│   │       ├── blogService.ts
+│   │       └── user.Service.ts
+│   ├── styles/
+│   │   └── marquee.css
+│   ├── types/
+│   │   └── user.d.ts
+│   └── utils/
+│       ├── cloudinaryUpload.js
+│       ├── config.js
+│       └── helpers.js
+├── tailwind.config.ts
+├── tree.cjs
+└── tsconfig.json
