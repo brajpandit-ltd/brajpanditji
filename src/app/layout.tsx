@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/layout";
-import { Header } from "@/components/layout";
-import ThemeProvider from "@/providers/themeProvider";
+import { ThemeProvider, StoreProvider } from "@/providers";
+import { Footer, Header } from "@/components/layout";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
@@ -24,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${lexend.variable}`}>
         <ThemeProvider>
           <>
