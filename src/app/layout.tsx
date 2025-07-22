@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider, StoreProvider } from "@/providers";
 import { Footer, Header } from "@/components/layout";
-import ThemeProvider from "@/providers/themeProvider";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -21,13 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${lexend.variable}`}>
         <ThemeProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <h1 className="text-primary">hello</h1>
+          <StoreProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </StoreProvider>
         </ThemeProvider>
       </body>
     </html>

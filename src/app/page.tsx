@@ -8,11 +8,11 @@ export default function Home() {
       <section className="relative flex flex-col items-center justify-center text-center py-20 md:py-40">
         <Image
           src="/assets/home-hero-light.jpg"
-          alt="Hero Image"
+          alt="Braj Pandit Home Hero"
           fill
           priority
           loading="eager"
-          style={{ objectFit: "cover", zIndex: -1 }}
+          className="cover-image -z-1"
         />
 
         <div className="mx-4 md:max-w-[900] md:mx-auto">
