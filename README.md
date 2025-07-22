@@ -4,6 +4,35 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+
+React App - 10MB (Build)
+    - 
+
+
+
+Browser   ---/home------> SERVER (BUILD) [ X ]
+                        + - build banayega client compoents - 200Kb
+                            |
+                            |
+BROWSER BUILD(10MB)   <------------- response - 10s
+1MB 200Kb <----------- 200Kb (1s) + 800KB (2s) = 3s
+
+Browser <----> /home --- BUILD(10MB)
+
+
+// Next.Js - frontend framework - full stack framework - React (Client) + node (Server)
+1. compoents
+- Client Component
+    - React - usestate, useEfect, ...hooks - "use client"
+    - onClick, onChange, ..... - "use client"
+- Server Component
+    - - "use server"
+
+    by default - server component
+
+
+// Nest.js - Backend framework - annotations based - Nodejs (typescript)
+
 ```bash
 npm run dev
 # or
