@@ -2,10 +2,12 @@
 
 import { Button } from "@/components/common";
 import Image from "next/image";
-import HomeProducts from "@/components/layout/home/HomeProducts";
-import VerifiedPanditjis from "@/components/layout/home/VerifiedPanditjis";
-import LiveBhajans from "@/components/layout/home/LiveBhajans";
-import PujaServices from "@/components/layout/home/PujaServices"; // Add this when it exists
+import {
+  HomeProducts,
+  LiveBhajans,
+  PujaServices,
+  VerifiedPanditJis,
+} from "@/components/layout/home";
 
 export default function HomePage() {
   return (
@@ -47,7 +49,7 @@ export default function HomePage() {
       <HomeProducts />
       <PujaServices />
 
-      <VerifiedPanditjis />
+      <VerifiedPanditJis />
     </div>
   );
 }

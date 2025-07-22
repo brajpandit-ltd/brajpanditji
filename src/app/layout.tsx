@@ -4,6 +4,8 @@ import "./globals.css";
 import { Footer } from "@/components/layout";
 import { Header } from "@/components/layout";
 import ThemeProvider from "@/providers/themeProvider";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -25,19 +27,29 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${lexend.variable}`}>
         <ThemeProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <h1 className="text-primary">hello</h1>
+          <>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
+          ;
         </ThemeProvider>
       </body>
     </html>
   );
 }
-
-
-
-
 
 // // src/app/(user)/home/page.tsx
 
