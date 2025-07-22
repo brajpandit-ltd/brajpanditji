@@ -2,15 +2,14 @@
 
 import { Button } from "@/components/common";
 import Image from "next/image";
-import HomeProducts from "@/components/user/home/HomeProducts";
-import VerifiedPanditjis from "@/components/user/home/VerifiedPanditjis";
-import LiveBhajans from "@/components/user/home/LiveBhajans";
-import PujaServices from "@/components/user/home/PujaServices"; // Add this when it exists
+import HomeProducts from "@/components/layout/home/HomeProducts";
+import VerifiedPanditjis from "@/components/layout/home/VerifiedPanditjis";
+import LiveBhajans from "@/components/layout/home/LiveBhajans";
+import PujaServices from "@/components/layout/home/PujaServices"; // Add this when it exists
 
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-20 px-4 md:px-12">
-
       {/* Hero Section (Static - No hooks/events) */}
       <section className="relative flex flex-col items-center justify-center text-center py-20 md:py-40">
         <Image
@@ -47,9 +46,8 @@ export default function HomePage() {
       <LiveBhajans />
       <HomeProducts />
       <PujaServices />
-      
+
       <VerifiedPanditjis />
-      
     </div>
   );
 }

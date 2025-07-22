@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useEffect } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import { usePathname, useRouter } from 'next/navigation';
+import Image from "next/image";
+import { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
+import { usePathname, useRouter } from "next/navigation";
 
 interface HeroSectionProps {
   onBookPanditClick?: () => void;
@@ -41,7 +41,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           ब्रज की भक्ति, अब डिजिटल रूप में 🌸
         </h1>
         <p className="mt-4 text-lg md:text-xl text-orange-100">
-          अपने जीवन को आध्यात्मिक ऊर्जा से भरें — पंडित बुक करें, पूजा कराएं, और भक्ति उत्पाद खरीदें।
+          अपने जीवन को आध्यात्मिक ऊर्जा से भरें — पंडित बुक करें, पूजा कराएं, और
+          भक्ति उत्पाद खरीदें।
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,7 +1,6 @@
 // 'use client';
 
 // import React, { useEffect, useState, useRef } from 'react';
-// import { getAllBlogs } from '@/services/user/blogService';
 // import Link from 'next/link';
 // import { motion } from 'framer-motion';
 // import { useTranslation } from 'react-i18next';
@@ -14,6 +13,8 @@
 //   FaBookOpen,
 // } from 'react-icons/fa';
 // import { MdTrendingUp, MdNewReleases } from 'react-icons/md';
+
+// const getAllBlogs: any[] = [];
 
 // interface Blog {
 //   _id: string;

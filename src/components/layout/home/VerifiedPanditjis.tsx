@@ -1,14 +1,9 @@
-// 🔱 VerifiedPanditJis.tsx — Pandit Cards with Dummy Data (© 2025 Jay Rana)
-
-'use client';
-
-import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface Pandit {
-  _id: string;
+  id: string;
   name: string;
   expertise: string;
   experience: number;
@@ -19,44 +14,27 @@ interface Pandit {
 }
 
 const VerifiedPanditJis: React.FC = () => {
-  const { t } = useTranslation();
-  const [pandits, setPandits] = useState<Pandit[]>([]);
-  const [loading, setLoading] = useState(true);
+  const loading = false;
 
-  const useDummy = true;
-
-  useEffect(() => {
-    const fetchData = async () => {
-      if (useDummy) {
-        const dummyPandits: Pandit[] = Array.from({ length: 8 }, (_, i) => ({
-          _id: `dummy-${i}`,
-          name: `Pandit Ji ${i + 1}`,
-          expertise: 'Vedic Rituals, Astrology',
-          experience: Math.floor(Math.random() * 20) + 1,
-          bio: 'Highly experienced in Vedic rituals and Sanskrit chanting.',
-          status: 'approved',
-          imageUrl: '/default-pandit.png',
-          rating: +(Math.random() * 5).toFixed(1),
-        }));
-        setPandits(dummyPandits);
-        setLoading(false);
-      } else {
-        // TODO: Add real API logic when ready
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const dummyPandits: Pandit[] = Array.from({ length: 8 }, (_, i) => ({
+    id: `dummy-${i}`,
+    name: `Pandit Ji ${i + 1}`,
+    expertise: "Vedic Rituals, Astrology",
+    experience: Math.floor(Math.random() * 20) + 1,
+    bio: "Highly experienced in Vedic rituals and Sanskrit chanting.",
+    status: "approved",
+    imageUrl: "/default-pandit.png",
+    rating: +(Math.random() * 5).toFixed(1),
+  }));
 
   return (
     <section className="py-12 px-4 sm:px-8 lg:px-16 ">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-orange-700 dark:text-orange-400 mb-2">
-          🙏 {t('home.verified_panditjis')}
+          🙏 home.verified_panditjis
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-sm">
-          {t('home.verified_panditjis_desc')}
+          home.verified_panditjis_desc
         </p>
       </div>
 
@@ -68,9 +46,9 @@ const VerifiedPanditJis: React.FC = () => {
                 className="w-full h-[260px] bg-orange-100 dark:bg-gray-700 animate-pulse rounded-xl"
               />
             ))
-          : pandits.map((pandit) => (
+          : dummyPandits.map((pandit) => (
               <div
-                key={pandit._id}
+                key={pandit.id}
                 className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
                 <Image
@@ -100,7 +78,7 @@ const VerifiedPanditJis: React.FC = () => {
 
                 <div className="px-4 pb-4">
                   <Link
-                    href={`/pandits/${pandit._id}`}
+                    href={`/pandits/${pandit.id}`}
                     className="inline-block mt-2 text-sm font-medium text-orange-600 hover:underline"
                   >
                     View Profile →

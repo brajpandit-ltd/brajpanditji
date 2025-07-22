@@ -1,9 +1,9 @@
 // ✅ app/(user)/home/page.tsx
 
-import HeroSection from "@/components/user/home/HeroSection";
-import HomeProducts from "@/components/user/home/HomeProducts";
-import VerifiedPanditjis from "@/components/user/home/VerifiedPanditjis";
-import LiveBhajans from "@/components/user/home/LiveBhajans";
+import HeroSection from "@/components/layout/home/HeroSection";
+import HomeProducts from "@/components/layout/home/HomeProducts";
+import VerifiedPanditjis from "@/components/layout/home/VerifiedPanditjis";
+import LiveBhajans from "@/components/layout/home/LiveBhajans";
 
 export default function HomePage() {
   return (

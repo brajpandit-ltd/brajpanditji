@@ -1,10 +1,6 @@
 // 🔱 LiveBhajans.tsx — Horizontal Scrollable Bhajans Section (© 2025 Jay Rana)
 
-"use client";
-
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,65 +16,63 @@ const dummyBhajans: Bhajan[] = [
     id: "1",
     title: "Shiv Tandav Stotra",
     subtitle: "By Shankar Mahadevan",
-    thumbnailUrl: "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
+    thumbnailUrl:
+      "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
   },
   {
     id: "2",
     title: "Hanuman Chalisa",
     subtitle: "Live Bhajan | Rameshbhai",
-    thumbnailUrl: "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
+    thumbnailUrl:
+      "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
   },
   {
     id: "3",
     title: "Om Jai Jagdish Hare",
     subtitle: "Evening Aarti Special",
-    thumbnailUrl: "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
+    thumbnailUrl:
+      "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
   },
   {
     id: "4",
     title: "Ram Siya Ram",
     subtitle: "Heart Touching Live",
-    thumbnailUrl: "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
+    thumbnailUrl:
+      "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
   },
   {
     id: "5",
     title: "Krishna Bhajan",
     subtitle: "Govind Bolo Hari Gopal Bolo",
-    thumbnailUrl: "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
+    thumbnailUrl:
+      "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
   },
   {
     id: "6",
     title: "Maa Durga Aarti",
     subtitle: "Live from Temple",
-    thumbnailUrl: "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
+    thumbnailUrl:
+      "https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg",
   },
 ];
 
 const LiveBhajans: React.FC = () => {
-  const { t } = useTranslation();
-
   return (
     <section className="py-12 px-4 sm:px-8 lg:px-16 ">
       <div className="text-center mb-6">
         <h2 className="text-3xl font-bold text-orange-700 dark:text-orange-400 mb-2">
-          🎶 {t("home.live_bhajans") || "Live Bhajans"}
+          🎶 Live Bhajans
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-sm">
-          {t("home.live_bhajans_desc") || "Listen to powerful bhajans live from temples and mandirs"}
+          Listen to powerful bhajans live from temples and mandirs
         </p>
       </div>
 
       <div className="overflow-x-auto">
-        <div
-          className="flex gap-6 snap-x snap-mandatory overflow-x-scroll pb-4 hide-scrollbar"
-        >
+        <div className="flex gap-6 snap-x snap-mandatory overflow-x-scroll pb-4 hide-scrollbar">
           {dummyBhajans.map((bhajan, index) => (
-            <motion.div
+            <div
               key={bhajan.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
               className="min-w-[250px] md:min-w-[280px] lg:min-w-[300px] bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow group snap-start"
             >
               <Link href={`/live/${bhajan.id}`}>
@@ -101,7 +95,7 @@ const LiveBhajans: React.FC = () => {
                   )}
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

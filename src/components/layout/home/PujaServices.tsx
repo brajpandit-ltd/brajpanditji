@@ -1,13 +1,10 @@
 "use client";
 
-
 import React from "react";
-import "@/lib/i18n"; 
-// import { Button } from "@/components/ui/button";
-
 import Image from "next/image";
 import Link from "next/link";
-import { pujaServices } from "@/data/pujaService";
+import pujaServices from "@/constants/pujaServices.json";
+import { slugify } from "@/utils/unitsFun";
 
 const PujaServices: React.FC = () => {
   return (
@@ -22,8 +19,8 @@ const PujaServices: React.FC = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {pujaServices.map((service) => (
           <Link
-            href={`/puja/${service.slug}`}
-            key={service.slug}
+            href={`/puja/${slugify(service.title)}`}
+            key={slugify(service.title)}
             className="bg-white dark:bg-neutral-900 rounded-lg shadow-md p-4 hover:shadow-xl transition"
           >
             <div className="relative w-full aspect-square mb-4">
@@ -38,15 +35,7 @@ const PujaServices: React.FC = () => {
             <h3 className="text-center text-sm font-semibold text-gray-800 dark:text-gray-100">
               {service.title}
             </h3>
-            {/* <Button
-          variant="secondary"
-          label="Book Your Panditji"
-          size="small"
-          className="hidden md:block"
-        /> */}
-
           </Link>
-          
         ))}
       </div>
     </section>
