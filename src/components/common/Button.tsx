@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 
+// interface OR types
+
 interface ButtonProps {
   label?: string;
   onClick?: (event: React.MouseEvent) => void;
@@ -27,6 +29,8 @@ interface ButtonProps {
   children?: React.ReactNode;
   [key: string]: any; // Allow additional props
 }
+
+//props - state
 
 const Button = ({
   type,
