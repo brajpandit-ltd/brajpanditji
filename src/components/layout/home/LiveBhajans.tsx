@@ -72,7 +72,7 @@ const LiveBhajans: React.FC = () => {
         <div className="flex gap-6 snap-x snap-mandatory overflow-x-scroll pb-4 hide-scrollbar">
           {dummyBhajans.map((bhajan, index) => (
             <div
-              key={bhajan.id}
+              key={bhajan.id + index}
               className="min-w-[250px] md:min-w-[280px] lg:min-w-[300px] bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow group snap-start"
             >
               <Link href={`/live/${bhajan.id}`}>

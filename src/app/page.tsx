@@ -11,7 +11,7 @@ import {
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col gap-20 px-4 md:px-12">
+    <>
       {/* Hero Section (Static - No hooks/events) */}
       <section className="relative flex flex-col items-center justify-center text-center py-20 md:py-40">
         <Image
@@ -24,15 +24,15 @@ export default function HomePage() {
         />
 
         <div className="relative z-10 mx-4 md:max-w-[900px] md:mx-auto">
-          <h4 className="text-sm md:text-base font-normal text-white">
+          <h4 className="text-sm md:text-base font-normal">
             Welcome to Braj Pandit
           </h4>
-          <h1 className="text-2xl md:text-6xl font-bold text-white">
+          <h1 className="text-2xl md:text-6xl font-bold">
             Your <span className="text-primary">Trusted</span> Platform for
             Sacred <span className="text-secondary">Hindu Ceremonies</span>
           </h1>
 
-          <p className="text-base md:text-xl font-medium mt-3 md:mt-6 text-white">
+          <p className="text-base md:text-xl font-medium mt-3 md:mt-6">
             Experience the Power of Vedic Rituals, Anytime, Anywhere. Book
             Expert Pandits for Your Sacred Ceremonies!
           </p>
@@ -50,6 +50,30 @@ export default function HomePage() {
       <PujaServices />
 
       <VerifiedPanditJis />
-    </div>
+    </>
   );
 }
+
+// // src/app/(user)/home/page.tsx
+
+// import React from "react";
+// import HeroSection from "@/components/user/home/HeroSection";
+// import HomeProducts from "@/components/user/home/HomeProducts";
+// import VerifiedPanditjis from "@/components/user/home/VerifiedPanditjis";
+// // import BlogSection from "@/components/user/home/BlogSection";
+// // import FamousPlaces from "@/components/user/home/FamousPlaces";
+// import LiveBhajans from "@/components/user/home/LiveBhajans";
+// // import PujaServices from "@/components/user/home/PujaServices"; // Add this when it exists
+
+// export default function HomePage() {
+//   return (
+//     <div className="flex flex-col gap-12 px-4 md:px-12">
+//       <HeroSection />
+//       <HomeProducts />
+//       <VerifiedPanditjis />
+//       {/* <FamousPlaces /> */}
+//       <LiveBhajans />
+//       {/* <BlogSection /> */}
+//     </div>
+//   );
+// }

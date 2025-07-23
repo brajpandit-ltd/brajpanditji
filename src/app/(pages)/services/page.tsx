@@ -1,27 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import { poojaServices } from "@/constants/static.json";
+import data from "@/constants/pujaServices.json";
 
 import Filter from "./Filter";
 import SearchHeader from "./SearchHeader";
 import PoojaCard from "./PoojaCard";
 
 const page = () => {
-  const handleBookNow = (poojaTitle: string) => {
-    alert(`Booking for ${poojaTitle} initiated!`);
-  };
-
-  // const filteredPujas = poojaCategories.filter((puja: any) => {
-  //   let matchesCategory =
-  //     selectedCategory === "All Pujas" || puja.title === selectedCategory;
-  //   let matchesTrending =
-  //     !selectedTrending ||
-  //     puja.title === selectedTrending ||
-  //     (selectedTrending === "Others" && puja.title === "Others");
-  //   let matchesSearch = puja.title.toLowerCase().includes(search.toLowerCase());
-  //   return matchesCategory && matchesTrending && matchesSearch;
-  // });
+  const { poojaServices } = data;
 
   return (
     <>
@@ -51,16 +38,16 @@ const page = () => {
         </div>
       </section>
 
-      <section className="flex bg-white min-h-screen sticky pt-8 pb-16 top-0 mx-4 md:mx-8">
+      <section className="flex sticky top-0 pt-8 pb-16 mx-4 md:mx-8">
         <div className="hidden md:block">
           <Filter />
         </div>
 
-        <div className="flex-1 overflow-auto">
+        <div className="flex-1">
           <SearchHeader />
 
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-5">
-            {poojaServices.map((puja, idx) => (
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4">
+            {poojaServices?.map((puja, idx) => (
               <PoojaCard key={puja.slug + idx} pooja={puja} />
             ))}
           </div>

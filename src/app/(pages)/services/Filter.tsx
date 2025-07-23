@@ -2,33 +2,30 @@
 
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
-import { Button } from "@/components/ui";
-import usePoojaServicesHook from "@/hooks/usePoojaServicesHook";
+import { Button } from "@/components/common";
 
-const categories = [
-  "All Pujas",
-  "Puja On Special Events",
-  "Upcoming Pujas",
-  "Dosha Nivaran Pujas",
-  "Mukti Karmas",
-];
+// constant data
+import data from "@/constants/pujaServices.json";
 
-const trendingTopics = [
-  "Griha Pravesh Puja",
-  "Satyanarayan Puja",
-  "Rudrabhishek Puja",
-  "Marriage Puja",
-  "Others",
-];
+// redux
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import {
+  setIsOpenFilters,
+  setCategoryFilter,
+  setTrendingFilter,
+} from "@/store/features/pujaSeavicesSlice";
 
 const Filter = () => {
-  const { filters, handleFilters, setIsOpenFilters } = usePoojaServicesHook();
+  const { poojaFilters } = data;
+
+  const dispatch = useAppDispatch();
+  const { filters } = useAppSelector((state) => state.pujaServices);
 
   return (
     <>
-      <aside className="w-[320px] p-8 pt-10 md:border-r-4 md:border-primary h-screen md:h-auto overflow-auto">
+      <aside className="relative w-full md:w-[320px] p-8 pt-10 h-screen md:border-r-4 mx-auto md:border-primary md:h-auto overflow-auto">
         <span className="absolute top-4 right-4 text-2xl cursor-pointer md:hidden">
-          <RxCross2 onClick={() => setIsOpenFilters(false)} />
+          <RxCross2 onClick={() => dispatch(setIsOpenFilters(false))} />
         </span>
 
         {/* Categories */}
@@ -38,13 +35,10 @@ const Filter = () => {
           </h4>
 
           <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
+            {poojaFilters?.categories.map((cat) => (
               <Button
                 key={cat}
-                onClick={() => {
-                  handleFilters("category", [...filters?.category, cat]);
-                  handleFilters("trending", []);
-                }}
+                onClick={() => dispatch(setCategoryFilter(cat))}
                 label={cat}
                 size="small"
                 variant={
@@ -60,12 +54,10 @@ const Filter = () => {
             Filters by Trending Topics
           </div>
           <div className="flex flex-col gap-2">
-            {trendingTopics.map((topic) => (
+            {poojaFilters?.trendingTopics.map((topic) => (
               <Button
                 key={topic}
-                onClick={() => {
-                  handleFilters("trending", [...filters?.trending, topic]);
-                }}
+                onClick={() => dispatch(setTrendingFilter(topic))}
                 label={topic}
                 size="small"
                 variant={

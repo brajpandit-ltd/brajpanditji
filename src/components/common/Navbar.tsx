@@ -1,19 +1,23 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useTranslation } from 'react-i18next';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { useTranslation } from "react-i18next";
+import { Menu, X } from "lucide-react";
 // import { cn } from '../../lib/utils';
 
 const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Puja Services', href: '/#pujaservices', scrollTo: 'pujaservices' },
-  { label: 'Products', href: '/#products', scrollTo: 'products' },
-  { label: 'Verified Pandits', href: '/#verifiedPandits', scrollTo: 'verifiedPandits' },
-  { label: 'Contact', href: '/contact' },
+  { label: "Home", href: "/" },
+  { label: "Puja Services", href: "/#pujaservices", scrollTo: "pujaservices" },
+  { label: "Products", href: "/#products", scrollTo: "products" },
+  {
+    label: "Verified Pandits",
+    href: "/#verifiedPandits",
+    scrollTo: "verifiedPandits",
+  },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -24,23 +28,19 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
 
-  function cn(arg0: string, arg1: string): string | undefined {
-    throw new Error('Function not implemented.');
-  }
-
   return (
-    <header className={cn(
-      'fixed top-0 left-0 w-full z-50 transition-all duration-300 shadow-sm',
-      isScrolled ? 'bg-white/90 dark:bg-[#1a1a1a]/90 backdrop-blur-md' : 'bg-transparent'
-    )}>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 shadow-sm
+      ${isScrolled ? "bg-white/90 dark:bg-[#1a1a1a]/90 backdrop-blur-md" : "bg-transparent"}`}
+    >
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -52,7 +52,7 @@ export default function Navbar() {
             className="w-10 h-10 object-contain"
           />
           <span className="text-xl font-bold text-orange-600 dark:text-orange-400">
-            {t('brajPandit')}
+            {t("brajPandit")}
           </span>
         </Link>
 
@@ -62,10 +62,12 @@ export default function Navbar() {
             <Link
               key={label}
               href={href}
-              className={cn(
-                'text-sm font-medium hover:text-orange-600 transition-colors',
-                pathname === href ? 'text-orange-600' : 'text-gray-700 dark:text-gray-200'
-              )}
+              className={`text-sm font-medium hover:text-orange-600 transition-colors
+                ${
+                  pathname === href
+                    ? "text-orange-600"
+                    : "text-gray-700 dark:text-gray-200"
+                }`}
             >
               {t(label)}
             </Link>
@@ -74,8 +76,15 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
-          <button onClick={() => setMenuOpen(prev => !prev)} className="text-gray-800 dark:text-white">
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <button
+            onClick={() => setMenuOpen((prev) => !prev)}
+            className="text-gray-800 dark:text-white"
+          >
+            {menuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>

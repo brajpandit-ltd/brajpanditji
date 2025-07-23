@@ -23,6 +23,7 @@ const Header = () => {
           wrapperClass="flex-1 justify-center"
         />
 
+        <Button variant="primary" label="Book Your Panditji" size="medium" />
       </nav>
 
       <nav className="flex items-center justify-between gap-6 text-sm font-medium md:hidden">
@@ -39,34 +40,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import Image from "next/image";
 // import React from "react";
@@ -106,13 +79,3 @@ export default Header;
 // };
 
 // export default Header;
-
-
-
-
-
-
-
-
-
-

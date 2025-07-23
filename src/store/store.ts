@@ -1,8 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { pujaServicesSlice } from "./features/pujaSeavicesSlice";
 
 export const makeStore = () => {
   return configureStore({
-    reducer: {},
+    reducer: {
+      pujaServices: pujaServicesSlice.reducer,
+    },
+
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: false,
+      }),
   });
 };
 

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaUsers, FaClock, FaArrowRight } from "react-icons/fa";
-import { Button } from "@/components/ui";
+import { Button } from "@/components/common";
+import { trimWords } from "@/utils/unitsFun";
 
 const PoojaCard = ({ pooja }: { pooja: any }) => {
   return (
@@ -23,7 +24,9 @@ const PoojaCard = ({ pooja }: { pooja: any }) => {
 
       <div className="p-4 mt-5">
         <h3 className="text-xl font-semibold">{pooja.title}</h3>
-        <p className="text-sm text-gray-600 mt-2">{pooja.description}</p>
+        <p className="text-sm text-gray-600 mt-2">
+          {trimWords(pooja.description, 10)}
+        </p>
 
         <div className="flex items-center gap-4 text-xs my-4">
           <div className="flex items-center gap-1">

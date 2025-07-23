@@ -1,46 +1,121 @@
-[
-  {
-    "title": "Janmastami Puja",
-    "img": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799258/Santan-Gopal-Mantra-Jaap_vvvwet.webp",
-    "description": "Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. People perform special puja to invite Her into their homes. Invite prosperity by booking a traditional Laxmi-Ganesh Puja.",
-    "category": "Festivals",
-    "rating": 5
-  },
-  {
-    "title": "Janmastami Pujaaa",
-    "img": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799258/Santan-Gopal-Mantra-Jaap_vvvwet.webp",
-    "description": "Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. People perform special puja to invite Her into their homes. Invite prosperity by booking a traditional Laxmi-Ganesh Puja.",
-    "category": "Festivals",
-    "rating": 5
-  },
-  {
-    "title": "Janmastami Pujaa",
-    "img": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799258/Santan-Gopal-Mantra-Jaap_vvvwet.webp",
-    "description": "Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. People perform special puja to invite Her into their homes. Invite prosperity by booking a traditional Laxmi-Ganesh Puja.",
-    "category": "Festivals",
-    "rating": 5
-  },
-  {
-    "title": "Diwali Pooja",
-    "img": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799256/diwali-puja_ww27yj.webp",
-    "description": "Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. People perform special puja to invite Her into their homes. Invite prosperity by booking a traditional Laxmi-Ganesh Puja.",
-    "category": "Festivals",
-    "rating": 5
-  },
-  
-  {
-    "title": "Marriage Puja",
-    "img": "https://res.cloudinary.com/djtq2eywl/image/upload/v1751097306/marriage_mr0p6b.jpg",
-    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
-    "category": "Life Events",
-    "rating": 4
-  },
-  {
-    "title": "Marriage Pujaaaa",
-    "img": "https://res.cloudinary.com/djtq2eywl/image/upload/v1751097306/marriage_mr0p6b.jpg",
-    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, andaa harmony by reducing planetary doshas.",
-    "category": "Life Eventsaa",
-    "rating": 5
+{
+  "poojaServices": [
+    {
+      "title": "Janmastami Puja",
+      "slug": "janmastami-puja",
+      "category": "Festivals",
+      "description": "Janmastami is the festival of Krishna, the God of wealth and prosperity. People perform special puja to invite Him into their homes. Invite prosperity by booking a traditional Krishna-Puja.",
+      "image": "/janmastami-puja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Diwali Pooja",
+      "slug": "diwali-pooja",
+      "category": "Festivals",
+      "description": "Diwali is the festival of lights, celebrated with joy and devotion. Book a Diwali Pooja to seek blessings for prosperity and happiness.",
+      "image": "/diwali-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Ganesh Chaturthi Pooja",
+      "slug": "ganesh-chaturthi-pooja",
+      "category": "Festivals",
+      "description": "Ganesh Chaturthi marks the birth of Lord Ganesha, the remover of obstacles. Celebrate with a special Pooja to invite His blessings.",
+      "image": "/ganesh-chaturthi-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Navratri Pooja",
+      "slug": "navratri-pooja",
+      "category": "Festivals",
+      "description": "Navratri is a nine-night festival dedicated to the Goddess Durga. Participate in the Pooja to seek her blessings for strength and prosperity.",
+      "image": "/navratri-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Maha Shivaratri Pooja",
+      "slug": "maha-shivaratri-pooja",
+      "category": "Festivals",
+      "description": "Maha Shivaratri is a significant festival dedicated to Lord Shiva. Book a Pooja to seek His blessings for peace and prosperity.",
+      "image": "/maha-shivaratri-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Holi Pooja",
+      "slug": "holi-pooja",
+      "category": "Festivals",
+      "description": "Holi is a festival of colors and joy. Celebrate with a Holi Pooja to seek blessings for prosperity and happiness.",
+      "image": "/holi-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Makar Sankranti Pooja",
+      "slug": "makar-sankranti-pooja",
+      "category": "Festivals",
+      "description": "Makar Sankranti marks the transition of the sun into Capricorn. Celebrate with a Pooja to invite prosperity and good fortune.",
+      "image": "/makar-sankranti-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Pongal Pooja",
+      "slug": "pongal-pooja",
+      "category": "Festivals",
+      "description": "Pongal is a harvest festival celebrated in South India. Book a Pooja to express gratitude for the bountiful harvest and seek blessings for prosperity.",
+      "image": "/pongal-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    },
+    {
+      "title": "Baisakhi Pooja",
+      "slug": "baisakhi-pooja",
+      "category": "Festivals",
+      "description": "Baisakhi marks the harvest festival in Punjab. Celebrate with a Pooja to seek blessings for prosperity and happiness.",
+      "image": "/baisakhi-pooja.jpg",
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true
+    }
+  ],
+
+  "poojaFilters": {
+    "categories": [
+      "All Pujas",
+      "Puja On Special Events",
+      "Upcoming Pujas",
+      "Dosha Nivaran Pujas",
+      "Mukti Karmas"
+    ],
+
+    "trendingTopics": [
+      "Griha Pravesh Puja",
+      "Satyanarayan Puja",
+      "Rudrabhishek Puja",
+      "Marriage Puja",
+      "Others"
+    ]
   }
- 
-]
+}

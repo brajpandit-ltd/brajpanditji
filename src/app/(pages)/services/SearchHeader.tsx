@@ -2,13 +2,19 @@
 
 import React from "react";
 import { CiSearch } from "react-icons/ci";
-import { Button } from "@/components/ui";
+import { Button } from "@/components/common";
 import Filter from "./Filter";
-import usePoojaServicesHook from "@/hooks/usePoojaServicesHook";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import {
+  setFilters,
+  setIsOpenFilters,
+} from "@/store/features/pujaSeavicesSlice";
 
 const SearchHeader = () => {
-  const { filters, handleFilters, isOpenFilters, setIsOpenFilters } =
-    usePoojaServicesHook();
+  const dispatch = useAppDispatch();
+  const { filters, isOpenFilters } = useAppSelector(
+    (state) => state.pujaServices
+  );
 
   return (
     <>
@@ -17,8 +23,10 @@ const SearchHeader = () => {
           <input
             type="text"
             placeholder="Search for services..."
-            value={filters?.search}
-            onChange={(e) => handleFilters("search", e.target.value)}
+            value={filters?.searchQuery || ""}
+            onChange={(e) =>
+              dispatch(setFilters({ searchQuery: e.target.value }))
+            }
             autoComplete="off"
             className="w-full py-3 pl-4 pr-11 rounded-full border border-gray-300 text-base outline-none"
           />
@@ -30,7 +38,7 @@ const SearchHeader = () => {
         <Button
           variant="default"
           className="md:hidden"
-          onClick={() => setIsOpenFilters(!isOpenFilters)}
+          onClick={() => dispatch(setIsOpenFilters(!isOpenFilters))}
           size={`small`}
           label="Filters"
         />
