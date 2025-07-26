@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { slugify } from "@/utils/unitsFun";
 
 interface Bhajan {
   id: string;
@@ -58,40 +59,40 @@ const dummyBhajans: Bhajan[] = [
 
 const LiveBhajans: React.FC = () => {
   return (
-    <section className="py-12 px-4 sm:px-8 lg:px-16 ">
-      <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-orange-700 dark:text-orange-400 mb-2">
-          🎶 Live Bhajans
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 text-sm">
+    <section className="relative py-12 mx-4 md:mx-8">
+      <div className="title border-l-4 border-secondary pl-4 transition-all">
+        <h4 className="text-sm md:text-base text-primary">🎶 Live Bhajans</h4>
+        <h2 className="text-xl font-bold">
           Listen to powerful bhajans live from temples and mandirs
+        </h2>
+
+        <p className="text-sm md:base">
+          Experience the Power of Vedic Rituals, Anytime, Anywhere. Book Expert
+          Pandits for Your Sacred Ceremonies!
         </p>
       </div>
 
-      <div className="overflow-x-auto">
-        <div className="flex gap-6 snap-x snap-mandatory overflow-x-scroll pb-4 hide-scrollbar">
+      <div className="overflow-x-auto mt-3 md:mt-4">
+        <div className="flex gap-3 snap-x snap-mandatory overflow-x-scroll">
           {dummyBhajans.map((bhajan, index) => (
             <div
               key={bhajan.id + index}
-              className="min-w-[250px] md:min-w-[280px] lg:min-w-[300px] bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow group snap-start"
+              className="w-full min-w-[230px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow group snap-start"
             >
-              <Link href={`/live/${bhajan.id}`}>
-                <div className="relative w-full h-[200px]">
-                  <Image
-                    src={bhajan.thumbnailUrl}
-                    alt={bhajan.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-md font-bold text-gray-800 dark:text-white line-clamp-1">
-                    {bhajan.title}
+              <Link href={`/live/${slugify(bhajan.title)}}-${bhajan.id}`}>
+                <Image
+                  src={bhajan?.thumbnailUrl}
+                  alt={bhajan?.title}
+                  width={230}
+                  height={100}
+                  className="object-cover h-[150px] group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-2">
+                  <h3 className="text-sm font-bold line-clamp-1">
+                    {bhajan?.title}
                   </h3>
-                  {bhajan.subtitle && (
-                    <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-1">
-                      {bhajan.subtitle}
-                    </p>
+                  {bhajan?.subtitle && (
+                    <p className="text-xs line-clamp-1">{bhajan.subtitle}</p>
                   )}
                 </div>
               </Link>

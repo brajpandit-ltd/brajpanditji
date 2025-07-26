@@ -5,37 +5,54 @@ import data from "@/constants/pujaServices.json";
 import { slugify } from "@/utils/unitsFun";
 
 const PujaServices: React.FC = () => {
-  const { poojaServices } = data;
+  const { poojaServicesCategories } = data;
 
   return (
     <section className="py-12 px-4 md:px-12">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold">Our Puja Services</h2>
-        <p className="text-gray-600 dark:text-gray-300 mt-2">
-          Book trusted Vedic rituals for every life event.
+      <div className="max-w-[955px] flex flex-col gap-3 text-center mx-auto">
+        <h2 className="text-2xl md:text-4xl font-bold">
+          Our <span className="text-primary">Premium</span> Services
+        </h2>
+
+        <p className="text-sm md:base">
+          Experience authentic Vedic rituals with our premium Pandit booking
+          service. From Griha Pravesh to Wedding Poojas, we provide expert
+          Pandits, auspicious muhurats, and complete pooja samagri for a
+          hassle-free, spiritually enriching experience. Book now for divine
+          blessings!
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {poojaServices?.map((service) => (
-          <Link
-            href={`/puja/${slugify(service.title)}`}
-            key={slugify(service.title)}
-            className="bg-white dark:bg-neutral-900 rounded-lg shadow-md p-4 hover:shadow-xl transition"
+      <div className="flex flex-wrap gap-5 mt-8 justify-center">
+        {poojaServicesCategories?.map((service, idx) => (
+          <div
+            key={service.slug + idx}
+            className="relative w-[300px] h-[350px] rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
           >
-            <div className="relative w-full aspect-square mb-4">
+            <Link
+              href={`/puja/${slugify(service.title)}`}
+              key={slugify(service.title)}
+              className="w-full h-full"
+            >
               <Image
                 src={service.image}
                 alt={service.title}
-                fill
-                className="object-cover rounded-md"
-                sizes="(max-width: 768px) 100vw, 200px"
+                width={300}
+                height={350}
+                className="object-cover w-full h-full"
               />
-            </div>
-            <h3 className="text-center text-sm font-semibold text-gray-800 dark:text-gray-100">
-              {service.title}
-            </h3>
-          </Link>
+              {service.popular && (
+                <span className="absolute top-3 left-3 bg-white text-[#a11d1d] font-semibold text-sm rounded-full px-4 py-1 shadow">
+                  Popular puja
+                </span>
+              )}
+
+              <div className="absolute bottom-0 left-0 right-0 p-3 bg-[rgba(231,231,231,0.7)]">
+                <h3 className="text-sm font-medium">{service.title}</h3>
+                <p className="text-xs">{service.description}</p>
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
     </section>

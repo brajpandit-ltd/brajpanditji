@@ -46,8 +46,8 @@ export default function HomePage() {
 
       {/* Dynamic Sections */}
       <LiveBhajans />
-      <HomeProducts />
       <PujaServices />
+      <HomeProducts />
 
       <VerifiedPanditJis />
     </>

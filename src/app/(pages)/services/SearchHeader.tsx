@@ -9,15 +9,17 @@ import {
   setFilters,
   setIsOpenFilters,
 } from "@/store/features/pujaSeavicesSlice";
+import data from "@/constants/pujaServices.json";
 
 const SearchHeader = () => {
+  const { poojaServicesCategories } = data;
   const dispatch = useAppDispatch();
   const { filters, isOpenFilters } = useAppSelector(
     (state) => state.pujaServices
   );
 
   return (
-    <>
+    <div>
       <div className="flex justify-between md:justify-end items-center gap-4 mb-6">
         <div className="relative w-full md:w-[400px]">
           <input
@@ -43,13 +45,26 @@ const SearchHeader = () => {
           label="Filters"
         />
       </div>
+      <div className="">
+        {poojaServicesCategories.map((cat) => (
+          <Button
+            key={cat.slug}
+            // onClick={() => dispatch(setCategoryFilter(cat.title))}
+            label={cat.title}
+            size="small"
+            variant={
+              filters?.category?.includes(cat.title) ? `primary` : `default`
+            }
+          />
+        ))}
+      </div>
 
       {isOpenFilters && (
         <div className="fixed top-0 left-0 right-0 w-full h-full z-[999] mt-20 bg-white md:hidden">
           <Filter />
         </div>
       )}
-    </>
+    </div>
   );
 };
 

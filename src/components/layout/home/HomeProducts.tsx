@@ -68,12 +68,23 @@ const sampleProducts: Product[] = [
   // Add more items as needed
 ];
 
+// devine products
 const HomeProducts: React.FC = () => {
   return (
-    <section className="py-12 px-4">
-      <h2 className="text-3xl font-bold text-orange-700 dark:text-white mb-6 text-center">
-        Popular Products
-      </h2>
+    <section className="relative py-12 mx-4 md:mx-8">
+      <div className="title border-l-4 border-secondary pl-4">
+        <h4 className="text-sm md:text-base text-primary">
+          🎶 Devine Products
+        </h4>
+        <h2 className="text-xl font-bold">Explore Btajdham Products</h2>
+
+        <p className="text-sm md:base">
+          Discover our exclusive range of Braj Dham products, offering you the
+          spiritual essence and authenticity of sacred rituals. Each product is
+          crafted to elevate your spiritual journey and connect you with the
+          divine.
+        </p>
+      </div>
 
       <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-orange-400">
         <div className="flex space-x-4 min-w-max">

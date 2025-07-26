@@ -1,4 +1,63 @@
 {
+  "poojaServicesCategories": [
+    {
+      "title": "Horoscope & Kundli Services",
+      "slug": "horoscope-kundli-services",
+      "popular": true,
+      "image": "/assets/horoscope-kundli-services.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Dosha Remedies & Vedic Solutions",
+      "slug": "dosha-remedies-vedic-solutions",
+      "popular": true,
+      "image": "/assets/dosha-remedies-vedic-solutions.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Divine Vastu & Energy Solutions",
+      "slug": "divine-vastu-energy-solutions",
+      "popular": true,
+      "image": "/assets/divine-vastu-energy-solutions.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Career, Business & Financial Astrology",
+      "slug": "career-business-financial-astrology",
+      "popular": true,
+      "image": "/assets/career-business-financial-astrology.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Relationship & Personal Life Astrology",
+      "slug": "relationship-personal-life-astrology",
+      "popular": true,
+      "image": "/assets/relationship-personal-life-astrology.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Health & Well-being Astrology",
+      "slug": "health-well-being-astrology",
+      "popular": true,
+      "image": "/assets/health-well-being-astrology.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Relationship & Personal Life Astrology",
+      "slug": "relationship-personal-life-astrology",
+      "popular": true,
+      "image": "/assets/relationship-personal-life-astrology.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    },
+    {
+      "title": "Health & Well-being Astrology",
+      "slug": "health-well-being-astrology",
+      "popular": true,
+      "image": "/assets/health-well-being-astrology.jpg",
+      "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
+    }
+  ],
+
   "poojaServices": [
     {
       "title": "Janmastami Puja",
