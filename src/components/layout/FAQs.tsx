@@ -1,0 +1,76 @@
+import {
+  Card,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui";
+import { faqs } from "@/constants/static";
+
+const FAQs = () => {
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Frequently Asked{" "}
+              <span className="bg-gradient-divine bg-clip-text text-transparent">
+                Questions
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Find answers to common questions about our Krishna Janmashtami
+              puja services
+            </p>
+          </div>
+
+          <Card className="p-8 shadow-sacred">
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-border rounded-lg px-6"
+                >
+                  <AccordionTrigger className="text-left hover:text-primary transition-colors duration-200 py-6">
+                    <span className="text-lg font-semibold">
+                      {faq.question}
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-6">
+                    <p className="text-muted-foreground leading-relaxed text-lg">
+                      {faq.answer}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </Card>
+
+          <div className="text-center mt-12">
+            <p className="text-lg text-muted-foreground mb-6">
+              Still have questions? We&apos;re here to help!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:+91-XXXXXXXXXX"
+                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-divine text-white rounded-lg font-semibold hover:shadow-divine transition-all duration-300"
+              >
+                Call Us: +91-XXXXXXXXXX
+              </a>
+              <a
+                href="https://wa.me/91XXXXXXXXXX"
+                className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+              >
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FAQs;

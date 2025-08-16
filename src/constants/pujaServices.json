@@ -1,7 +1,7 @@
 {
   "poojaServicesCategories": [
     {
-      "title": "Horoscope & Kundli Services",
+      "title": "Horoscope & Services",
       "slug": "horoscope-kundli-services",
       "popular": true,
       "image": "/assets/horoscope-kundli-services.jpg",
@@ -43,125 +43,23 @@
       "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
     },
     {
-      "title": "Relationship & Personal Life Astrology",
-      "slug": "relationship-personal-life-astrology",
+      "title": "Relationship & Personal Life Astrology Test",
+      "slug": "relationship-personal-life-astrology-test",
       "popular": true,
       "image": "/assets/relationship-personal-life-astrology.jpg",
       "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
     },
     {
-      "title": "Health & Well-being Astrology",
-      "slug": "health-well-being-astrology",
+      "title": "Health & Well-being Astrology Test",
+      "slug": "health-well-being-astrology-test",
       "popular": true,
       "image": "/assets/health-well-being-astrology.jpg",
       "description": "Always be engaged & devoted in listening to Shrimad Bhagwat Katha also known as Lord’s Bhagwat Katha.By mere listening of the Katha, Lord shall reside..."
     }
   ],
 
-  "poojaServices": [
-    {
-      "title": "Janmastami Puja",
-      "slug": "janmastami-puja",
-      "category": "Festivals",
-      "description": "Janmastami is the festival of Krishna, the God of wealth and prosperity. People perform special puja to invite Him into their homes. Invite prosperity by booking a traditional Krishna-Puja.",
-      "image": "/janmastami-puja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Diwali Pooja",
-      "slug": "diwali-pooja",
-      "category": "Festivals",
-      "description": "Diwali is the festival of lights, celebrated with joy and devotion. Book a Diwali Pooja to seek blessings for prosperity and happiness.",
-      "image": "/diwali-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Ganesh Chaturthi Pooja",
-      "slug": "ganesh-chaturthi-pooja",
-      "category": "Festivals",
-      "description": "Ganesh Chaturthi marks the birth of Lord Ganesha, the remover of obstacles. Celebrate with a special Pooja to invite His blessings.",
-      "image": "/ganesh-chaturthi-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Navratri Pooja",
-      "slug": "navratri-pooja",
-      "category": "Festivals",
-      "description": "Navratri is a nine-night festival dedicated to the Goddess Durga. Participate in the Pooja to seek her blessings for strength and prosperity.",
-      "image": "/navratri-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Maha Shivaratri Pooja",
-      "slug": "maha-shivaratri-pooja",
-      "category": "Festivals",
-      "description": "Maha Shivaratri is a significant festival dedicated to Lord Shiva. Book a Pooja to seek His blessings for peace and prosperity.",
-      "image": "/maha-shivaratri-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Holi Pooja",
-      "slug": "holi-pooja",
-      "category": "Festivals",
-      "description": "Holi is a festival of colors and joy. Celebrate with a Holi Pooja to seek blessings for prosperity and happiness.",
-      "image": "/holi-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Makar Sankranti Pooja",
-      "slug": "makar-sankranti-pooja",
-      "category": "Festivals",
-      "description": "Makar Sankranti marks the transition of the sun into Capricorn. Celebrate with a Pooja to invite prosperity and good fortune.",
-      "image": "/makar-sankranti-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Pongal Pooja",
-      "slug": "pongal-pooja",
-      "category": "Festivals",
-      "description": "Pongal is a harvest festival celebrated in South India. Book a Pooja to express gratitude for the bountiful harvest and seek blessings for prosperity.",
-      "image": "/pongal-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    },
-    {
-      "title": "Baisakhi Pooja",
-      "slug": "baisakhi-pooja",
-      "category": "Festivals",
-      "description": "Baisakhi marks the harvest festival in Punjab. Celebrate with a Pooja to seek blessings for prosperity and happiness.",
-      "image": "/baisakhi-pooja.jpg",
-      "count": 120,
-      "price": 500,
-      "duration": "1 hour",
-      "popular": true
-    }
-  ],
-
   "poojaFilters": {
-    "categories": [
+    "trendingTopics": [
       "All Pujas",
       "Puja On Special Events",
       "Upcoming Pujas",
@@ -169,12 +67,429 @@
       "Mukti Karmas"
     ],
 
-    "trendingTopics": [
+    "tags": [
       "Griha Pravesh Puja",
       "Satyanarayan Puja",
       "Rudrabhishek Puja",
       "Marriage Puja",
       "Others"
     ]
-  }
+  },
+
+  "pujaCategories": [
+    {
+      "title": "All",
+      "slug": "",
+      "image": "/assets/pujas/all.jpg"
+    },
+    {
+      "title": "Rudrakshya",
+      "slug": "rudrakshya",
+      "image": "/assets/pujas/rudrakshya.png"
+    },
+    {
+      "title": "Zodiac",
+      "slug": "zodiac",
+      "image": "/assets/pujas/zodiac.png"
+    },
+    {
+      "title": "Wealth",
+      "slug": "wealth",
+      "image": "/assets/pujas/wealth.png"
+    },
+    {
+      "title": "Business",
+      "slug": "business",
+      "image": "/assets/pujas/business.png"
+    },
+    {
+      "title": "Study",
+      "slug": "study",
+      "image": "/assets/pujas/study.png"
+    },
+    {
+      "title": "Career",
+      "slug": "career",
+      "image": "/assets/pujas/career.png"
+    },
+    {
+      "title": "Tantra",
+      "slug": "tantra",
+      "image": "/assets/pujas/tantra.png"
+    },
+    {
+      "title": "Health",
+      "slug": "health",
+      "image": "/assets/pujas/health.png"
+    },
+    {
+      "title": "Relationship",
+      "slug": "relationship",
+      "image": "/assets/pujas/relationship.png"
+    },
+    {
+      "title": "Family",
+      "slug": "family",
+      "image": "/assets/pujas/family.png"
+    },
+    {
+      "title": "Others",
+      "slug": "others",
+      "image": "/assets/pujas/others.png"
+    }
+  ],
+
+  "poojaServices": [
+    {
+      "title": "Janmastami Puja",
+      "slug": "janmastami-puja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Janmastami is the festival of Krishna, the God of wealth and prosperity. People perform special puja to invite Him into their homes. Invite prosperity by booking a traditional Krishna-Puja.",
+      "bannerImage": "/janmastami-puja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diwali Pooja",
+      "slug": "diwali-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Diwali is the festival of lights, celebrated with joy and devotion. Book a Diwali Pooja to seek blessings for prosperity and happiness.",
+      "bannerImage": "/diwali-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ganesh Chaturthi Pooja",
+      "slug": "ganesh-chaturthi-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Ganesh Chaturthi marks the birth of Lord Ganesha, the remover of obstacles. Celebrate with a special Pooja to invite His blessings.",
+      "bannerImage": "/ganesh-chaturthi-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Navratri Pooja",
+      "slug": "navratri-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Navratri is a nine-night festival dedicated to the Goddess Durga. Participate in the Pooja to seek her blessings for strength and prosperity.",
+      "bannerImage": "/navratri-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Maha Shivaratri Pooja",
+      "slug": "maha-shivaratri-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Maha Shivaratri is a significant festival dedicated to Lord Shiva. Book a Pooja to seek His blessings for peace and prosperity.",
+      "bannerImage": "/maha-shivaratri-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Holi Pooja",
+      "slug": "holi-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Holi is a festival of colors and joy. Celebrate with a Holi Pooja to seek blessings for prosperity and happiness.",
+      "bannerImage": "/holi-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Makar Sankranti Pooja",
+      "slug": "makar-sankranti-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Makar Sankranti marks the transition of the sun into Capricorn. Celebrate with a Pooja to invite prosperity and good fortune.",
+      "bannerImage": "/makar-sankranti-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pongal Pooja",
+      "slug": "pongal-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Pongal is a harvest festival celebrated in South India. Book a Pooja to express gratitude for the bountiful harvest and seek blessings for prosperity.",
+      "bannerImage": "/pongal-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Baisakhi Pooja",
+      "slug": "baisakhi-pooja",
+      "category": "Horoscope & Kundli Services",
+      "trending": ["All Pujas"],
+      "tags": ["Griha Pravesh Puja"],
+      "description": "Baisakhi marks the harvest festival in Punjab. Celebrate with a Pooja to seek blessings for prosperity and happiness.",
+      "bannerImage": "/baisakhi-pooja.jpg",
+      "images": [],
+      "count": 120,
+      "price": 500,
+      "duration": "1 hour",
+      "popular": true,
+      "rating": 5,
+      "packages": [
+        {
+          "id": "basic",
+          "title": "Abhishek Participation",
+          "price": "₹751",
+          "description": "Participate in temple abhishek remotely with name gotra sankalp.",
+          "features": [
+            "Gotra Sankalp by temple Pandit",
+            "Name included in puja",
+            "Abhishek video shared"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Live Puja + Prasad",
+          "price": "₹1501",
+          "description": "Attend live puja via Zoom with special Braj prasad delivery.",
+          "features": [
+            "Live darshan",
+            "Temple prasadam delivery",
+            "Exclusive blessings from Braj Pandits"
+          ]
+        }
+      ]
+    }
+  ]
 }

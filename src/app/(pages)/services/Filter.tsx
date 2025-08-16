@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { RxCross2 } from "react-icons/rx";
 import { Button } from "@/components/common";
 
@@ -11,15 +12,52 @@ import data from "@/constants/pujaServices.json";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   setIsOpenFilters,
-  setCategoryFilter,
-  setTrendingFilter,
+  setTagsFilter,
+  updateFiltersBySearchParams,
+  resetFilters,
+  setFilters,
 } from "@/store/features/pujaSeavicesSlice";
 
 const Filter = () => {
-  const { poojaFilters } = data;
-
   const dispatch = useAppDispatch();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const { poojaFilters } = data;
   const { filters } = useAppSelector((state) => state.pujaServices);
+
+  // update filters by search query params
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    const filtersParams = {
+      searchQuery: params.get("searchQuery") || "",
+      category: params.get("category") || "",
+      trending: params.get("trending") || "",
+      tags: params.getAll("tags"),
+    };
+    dispatch(updateFiltersBySearchParams(filtersParams));
+
+    router.push(`/?${params.toString()}`);
+
+    return () => {
+      dispatch(resetFilters());
+    };
+  }, [dispatch, searchParams, router]);
+
+  // when i change the filters, update the url search params
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (filters?.searchQuery) params.set("searchQuery", filters.searchQuery);
+    if (filters?.category) params.set("category", filters.category);
+    if (filters?.trending) params.set("trending", filters.trending);
+
+    if (filters?.tags?.length)
+      filters.tags.forEach((tag) => {
+        params.append("tags", tag);
+      });
+
+    router.push(`/?${params.toString()}`);
+  }, [filters, router]);
 
   return (
     <>
@@ -35,14 +73,14 @@ const Filter = () => {
           </h4>
 
           <div className="flex flex-wrap gap-2">
-            {poojaFilters?.categories.map((cat) => (
+            {poojaFilters?.trendingTopics.map((trending, idx) => (
               <Button
-                key={cat}
-                onClick={() => dispatch(setCategoryFilter(cat))}
-                label={cat}
-                size="small"
+                key={trending + idx}
+                onClick={() => dispatch(setFilters({ trending }))}
+                label={trending}
+                size="v-small"
                 variant={
-                  filters?.category?.includes(cat) ? `primary` : `default`
+                  filters?.trending?.includes(trending) ? `primary` : `default`
                 }
               />
             ))}
@@ -53,16 +91,14 @@ const Filter = () => {
           <div className="font-semibold text-primary text-lg mb-2 border-b-2 border-primary pb-1 text-center">
             Filters by Trending Topics
           </div>
-          <div className="flex flex-col gap-2">
-            {poojaFilters?.trendingTopics.map((topic) => (
+          <div className="flex flex-wrap gap-2">
+            {poojaFilters?.tags.map((tag) => (
               <Button
-                key={topic}
-                onClick={() => dispatch(setTrendingFilter(topic))}
-                label={topic}
-                size="small"
-                variant={
-                  filters?.trending?.includes(topic) ? `primary` : `default`
-                }
+                key={tag}
+                onClick={() => dispatch(setTagsFilter(tag))}
+                label={tag}
+                size="v-small"
+                variant={filters?.tags?.includes(tag) ? `primary` : `default`}
               />
             ))}
           </div>

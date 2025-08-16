@@ -24,11 +24,11 @@ const PoojaCard = ({ pooja }: { pooja: any }) => {
 
       <div className="p-4 mt-5">
         <h3 className="text-xl font-semibold">{pooja.title}</h3>
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-sm text-gray-600 mt-1">
           {trimWords(pooja.description, 10)}
         </p>
 
-        <div className="flex items-center gap-4 text-xs my-4">
+        <div className="flex items-center gap-4 text-xs my-1">
           <div className="flex items-center gap-1">
             <FaClock className="text-orange-500" />
             <span>2-3 Hours</span>
@@ -39,7 +39,7 @@ const PoojaCard = ({ pooja }: { pooja: any }) => {
           </div>
         </div>
 
-        <Link href={`/services/${pooja.slug}`} className="group">
+        <Link href={`/services/${pooja.slug}`}>
           <Button
             label="Book Sacred puja"
             size="small"
@@ -48,6 +48,7 @@ const PoojaCard = ({ pooja }: { pooja: any }) => {
               <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
             }
             iconPosition="right"
+            className="mt-2"
           />
         </Link>
       </div>

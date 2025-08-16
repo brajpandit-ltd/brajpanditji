@@ -1,11 +1,13 @@
-import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/common";
+import Image from "next/image";
+import Link from "next/link";
 import staticData from "@/constants/static.json";
 import Menu from "./Menu";
 
 const Logo = ({ logo }: { logo: string }) => (
-  <Image src={logo} alt="brajpandit logo" width={135} height={53} />
+  <Link href="/" className="flex items-center">
+    <Image src={logo} alt="brajpandit logo" width={135} height={53} />
+  </Link>
 );
 
 const Header = () => {
@@ -23,7 +25,8 @@ const Header = () => {
           wrapperClass="flex-1 justify-center"
         />
 
-        <Button variant="primary" label="Book Your Panditji" size="medium" />
+        {/* <Button variant="primary" label="Book Your Panditji" size="medium" /> */}
+        <div></div>
       </nav>
 
       <nav className="flex items-center justify-between gap-6 text-sm font-medium md:hidden">

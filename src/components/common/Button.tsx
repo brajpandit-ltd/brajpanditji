@@ -19,7 +19,7 @@ interface ButtonProps {
     | "warning"
     | "info"
     | "default";
-  size?: "small" | "medium" | "large";
+  size?: "v-small" | "small" | "medium" | "large";
 
   disabled?: boolean;
   loading?: boolean;
@@ -80,6 +80,9 @@ const Button = ({
   }
 
   switch (size) {
+    case "v-small":
+      btnSize = "px-2 py-1 text-[10px]";
+      break;
     case "small":
       btnSize = "px-4 py-2 text-sm";
       break;

@@ -1,14 +1,11 @@
+import { SearchPujaFiltersParams } from "@/types/pujaService";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface PujaServicesState {
-  // pujaServices: PujaService[];
-  // loading: boolean;
-  // error: string | null;
-
   isOpenFilters: boolean;
   filters: {
-    category?: string[];
-    trending?: string[];
+    category?: string;
+    trending?: string;
     tags?: string[];
     location?: string;
     priceRange?: [number, number];
@@ -20,15 +17,10 @@ interface PujaServicesState {
 
 // Define the initial state for the puja services slice
 const initialState: PujaServicesState = {
-  // pujaServices: [],
-  // loading: false,
-  // error: null,
-
-  // pooja filters
   isOpenFilters: false,
   filters: {
-    category: ["All Pujas"],
-    trending: [],
+    category: "",
+    trending: "",
     tags: [],
     searchQuery: "",
   },
@@ -43,25 +35,16 @@ export const pujaServicesSlice = createSlice({
       state.isOpenFilters = action.payload;
     },
 
-    setCategoryFilter: (state, action: { payload: string }) => {
-      if (state.filters?.category?.includes(action.payload)) {
-        state.filters.category = state.filters.category.filter(
-          (category) => category !== action.payload
-        );
-      } else {
-        state.filters.category = state.filters.category || [];
-        state.filters.category.push(action.payload);
-      }
-    },
+    setTagsFilter: (state, action: { payload: string | undefined }) => {
+      if (!action.payload) return;
 
-    setTrendingFilter: (state, action: { payload: string }) => {
-      if (state.filters?.trending?.includes(action.payload)) {
-        state.filters.trending = state.filters.trending.filter(
-          (trending) => trending !== action.payload
+      if (state.filters?.tags?.includes(action.payload)) {
+        state.filters.tags = state.filters.tags.filter(
+          (tag) => tag !== action.payload
         );
       } else {
-        state.filters.trending = state.filters.trending || [];
-        state.filters.trending.push(action.payload);
+        state.filters.tags = state.filters.tags || [];
+        state.filters.tags.push(action.payload);
       }
     },
 
@@ -72,6 +55,19 @@ export const pujaServicesSlice = createSlice({
     resetFilters: (state) => {
       state.filters = {};
     },
+
+    // update filters by search query params
+    updateFiltersBySearchParams: (
+      state,
+      action: {
+        payload: SearchPujaFiltersParams;
+      }
+    ) => {
+      state.filters.searchQuery = action.payload?.searchQuery || "";
+      state.filters.category = action.payload?.category || "";
+      state.filters.trending = action.payload?.trending || "";
+      state.filters.tags = action.payload?.tags || [];
+    },
   },
 });
 
@@ -80,6 +76,6 @@ export const {
   setIsOpenFilters,
   setFilters,
   resetFilters,
-  setCategoryFilter,
-  setTrendingFilter,
+  setTagsFilter,
+  updateFiltersBySearchParams,
 } = pujaServicesSlice.actions;

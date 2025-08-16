@@ -58,3 +58,7 @@ body {
   color: var(--foreground);
   font-family: "Lexend", sans-serif;
 }
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}

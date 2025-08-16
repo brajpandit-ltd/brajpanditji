@@ -1,60 +1,80 @@
-import React from "react";
-import Image from "next/image";
-
-import data from "@/constants/pujaServices.json";
-
+import { Metadata } from "next";
+import React, { Suspense } from "react";
+import { PujaService, SearchPujaFiltersParams } from "@/types/pujaService";
 import Filter from "./Filter";
 import SearchHeader from "./SearchHeader";
 import PoojaCard from "./PoojaCard";
+import HeroSection from "./HeroSection";
+import { toast } from "react-toastify";
 
-const page = () => {
-  const { poojaServices } = data;
+export const metadata: Metadata = {
+  title: "Pooja Services | Braj Pandit Ji",
+};
+
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<SearchPujaFiltersParams>;
+}) {
+  const params = await searchParams;
+
+  const getQueryParams = () => {
+    const query = new URLSearchParams();
+    if (params.searchQuery) query.set("searchQuery", params.searchQuery);
+    if (params.category) query.set("category", params.category);
+    if (params.trending) query.set("trending", params.trending);
+    if (params.tags && Array.isArray(params.tags)) {
+      params.tags.forEach((tag: string) => query.append("tags", tag));
+    }
+
+    return query.toString();
+  };
+
+  let poojaServices: PujaService[] = [];
+  try {
+    const res = await fetch(
+      `${process.env.API_BASE_URL}/api/services/e-pooja?${getQueryParams()}`,
+      {}
+    );
+
+    if (!res.ok) {
+      toast.error("Failed to fetch e-pooja services.");
+      return [];
+    }
+
+    const json = await res.json();
+    poojaServices = json.data || [];
+  } catch (error: any) {
+    console.error("Error fetching e-pooja services:", error?.message);
+  }
 
   return (
     <>
-      <section className="relative py-16 md:py-24">
-        <Image
-          src="/assets/services-hero.jpg"
-          alt="Braj Pandit services hero"
-          fill
-          priority
-          loading="eager"
-          className="object-cover -z-1"
-        />
-
-        <div className="max-w-[350px] md:max-w-[650px] px-8">
-          <h4 className="text-sm md:text-base font-normal">
-            Bring Poojas From Brajdham
-          </h4>
-          <h1 className="text-2xl md:text-5xl font-bold">
-            <span className="text-primary">Sacred</span> Services for Your{" "}
-            <span className="text-secondary">Spiritual Journey</span>
-          </h1>
-          <p className="text-sm md:text-xl font-medium mt-3 md:mt-6">
-            Experience the Power of Vedic Rituals, Anytime, Anywhere. Book
-            Expert Pandits for Your Sacred Ceremonies!
-          </p>
-          <p className="mt-4">Scroll Down🔻</p>
-        </div>
-      </section>
+      <HeroSection />
 
       <section className="flex sticky top-0 pt-8 pb-16 mx-4 md:mx-8">
-        <div className="hidden md:block">
+        {/* Sidebar filter */}
+        <aside className="hidden md:block">
           <Filter />
-        </div>
+        </aside>
 
-        <div className="flex-1">
-          <SearchHeader />
+        {/* Main content */}
+        <div className="flex-1 px-2">
+          <SearchHeader basePathname={""} pujaCategories={[]} />
 
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4">
-            {poojaServices?.map((puja, idx) => (
-              <PoojaCard key={puja.slug + idx} pooja={puja} />
-            ))}
-          </div>
+          <Suspense fallback={<p>Loading...</p>}>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4">
+              {poojaServices.length > 0 ? (
+                poojaServices?.map((puja) => (
+                  <PoojaCard key={puja.slug} pooja={puja} />
+                ))
+              ) : (
+                <p className="text-gray-500">No services found.</p>
+              )}
+            </div>
+          </Suspense>
         </div>
       </section>
     </>
   );
-};
-
-export default page;
+}

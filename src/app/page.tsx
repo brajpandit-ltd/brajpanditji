@@ -1,15 +1,75 @@
-// app/page.tsx
-
-import { Button } from "@/components/common";
 import Image from "next/image";
 import {
-  HomeProducts,
   LiveBhajans,
-  PujaServices,
-  VerifiedPanditJis,
+  PersonalisedPujas,
+  UpcommingPujas,
 } from "@/components/layout/home";
+import {
+  BookingProcess,
+  FAQs,
+  Testimonials,
+  WhyChooseUs,
+} from "@/components/layout";
+import { Button } from "@/components/common";
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export const metadata = {
+  title: "Braj Pandit Ji",
+  description:
+    "Book your Pandit Ji for all your religious needs in Braj - Mathura, Vrindavan, and surrounding areas.",
+  keywords: [
+    "Braj Pandit Ji",
+    "Pandit Ji Booking",
+    "Hindu Ceremonies",
+    "Online Pooja Booking",
+    "Vedic Pujas",
+    "Mathura Pandit Ji",
+    "Vrindavan Pandit Ji",
+    "Religious Services",
+    "Puja Services",
+  ],
+  openGraph: {
+    title: "Braj Pandit Ji",
+    description:
+      "Book your Pandit Ji for all your religious needs in Braj - Mathura, Vrindavan, and surrounding areas.",
+    images: [
+      {
+        url: "/assets/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Braj Pandit Ji - Your Trusted Platform for Sacred Hindu Ceremonies",
+      },
+    ],
+    siteName: "Braj Pandit Ji",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Braj Pandit Ji",
+    description:
+      "Book your Pandit Ji for all your religious needs in Braj - Mathura, Vrindavan, and surrounding areas.",
+    images: ["/assets/og-image.jpg"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/shortcut-icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
+  alternates: {
+    canonical: "https://brajpandit.com/",
+    languages: {
+      "en-US": "https://brajpandit.com",
+      "hi-IN": "https://brajpandit.com/hi",
+    },
+  },
+};
+
+export default async function HomePage() {
   return (
     <>
       {/* Hero Section (Static - No hooks/events) */}
@@ -44,36 +104,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Dynamic Sections */}
+      {/* VEDIC BRAJ-PANDIT UPCOMING POOJAS */}
+      <UpcommingPujas />
+
+      {/* VEDIC Braj Pandit'S PERSONALIZE POOJA */}
+      <PersonalisedPujas />
+
+      {/*  */}
       <LiveBhajans />
-      <PujaServices />
+
+      <BookingProcess />
+      <WhyChooseUs />
+      <Testimonials />
+      <FAQs />
+
+      {/* Dynamic Sections */}
+      {/* 
       <HomeProducts />
 
-      <VerifiedPanditJis />
+      <VerifiedPanditJis /> */}
     </>
   );
 }
-
-// // src/app/(user)/home/page.tsx
-
-// import React from "react";
-// import HeroSection from "@/components/user/home/HeroSection";
-// import HomeProducts from "@/components/user/home/HomeProducts";
-// import VerifiedPanditjis from "@/components/user/home/VerifiedPanditjis";
-// // import BlogSection from "@/components/user/home/BlogSection";
-// // import FamousPlaces from "@/components/user/home/FamousPlaces";
-// import LiveBhajans from "@/components/user/home/LiveBhajans";
-// // import PujaServices from "@/components/user/home/PujaServices"; // Add this when it exists
-
-// export default function HomePage() {
-//   return (
-//     <div className="flex flex-col gap-12 px-4 md:px-12">
-//       <HeroSection />
-//       <HomeProducts />
-//       <VerifiedPanditjis />
-//       {/* <FamousPlaces /> */}
-//       <LiveBhajans />
-//       {/* <BlogSection /> */}
-//     </div>
-//   );
-// }

@@ -3,11 +3,8 @@
     "logo": "/braj-pandit-logo.svg",
     "menuItems": [
       { "label": "Home", "link": "/" },
-      { "label": "E Poojas", "link": "/services", "subMenu": [] },
-      { "label": "Astrology", "link": "/astrology", "subMenu": [] },
-      { "label": "Braj Shop", "link": "/brajshop", "subMenu": [] },
-      { "label": "Horoscope", "link": "/horoscope", "subMenu": [] },
-      { "label": "Braj Yatra", "link": "/braj-yatra", "subMenu": [] }
+      { "label": "E Poojas", "link": "/services/e-puja", "subMenu": [] },
+      { "label": "About Us", "link": "/about-us", "subMenu": [] }
     ]
   }
 }
