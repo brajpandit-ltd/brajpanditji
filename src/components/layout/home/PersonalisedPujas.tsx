@@ -11,32 +11,32 @@ import { setFilters } from "@/store/features/pujaSeavicesSlice";
 const PersonalisedPuja = () => {
   const { pujaCategories } = data;
   const dispatch = useAppDispatch();
-  const { filters } = useAppSelector((state) => state.pujaServices);
+  const { filters } = useAppSelector((state: any) => state.pujaServices);
 
   const [pujas, setPujas] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const handleCat = (cat: string) => dispatch(setFilters({ category: cat }));
 
+  const fetchPujas = async (category: string) => {
+    setLoading(true);
+
+    try {
+      const response: any = await services.personalisedPujas(
+        `?category=${category}`,
+        false
+      );
+      setPujas(response.data);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching pujas:", error);
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchPujas = async () => {
-      setLoading(true);
-
-      try {
-        const response = await services.personalisedPujas(
-          `?category=${filters?.category}`,
-          false
-        );
-        setPujas(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching pujas:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchPujas();
-  }, [filters.category]);
+    fetchPujas(filters.category);
+  }, [filters]);
 
   return (
     <section className="relative py-12 px-4 md:px-8 bg-amber-100">

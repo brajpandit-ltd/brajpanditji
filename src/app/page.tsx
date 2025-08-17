@@ -12,8 +12,6 @@ import {
 } from "@/components/layout";
 import { Button } from "@/components/common";
 
-export const dynamic = "force-dynamic";
-
 export const metadata = {
   title: "Braj Pandit Ji",
   description:

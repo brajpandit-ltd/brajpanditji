@@ -24,7 +24,7 @@ const Filter = () => {
   const searchParams = useSearchParams();
 
   const { poojaFilters } = data;
-  const { filters } = useAppSelector((state) => state.pujaServices);
+  const { filters } = useAppSelector((state: any) => state.pujaServices);
 
   // update filters by search query params
   useEffect(() => {
@@ -52,7 +52,7 @@ const Filter = () => {
     if (filters?.trending) params.set("trending", filters.trending);
 
     if (filters?.tags?.length)
-      filters.tags.forEach((tag) => {
+      filters.tags.forEach((tag: any) => {
         params.append("tags", tag);
       });
 

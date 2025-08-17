@@ -32,3 +32,20 @@ export function debounce<T extends (...args: any[]) => void>(
     timeoutId = setTimeout(() => func(...args), delay);
   };
 }
+
+export const getUrl = (search: string, isServer: boolean = true) => {
+  const base = isServer
+    ? process.env.API_BASE_URL
+    : process.env.NEXT_PUBLIC_API_BASE_URL;
+
+  if (!base) {
+    throw new Error(
+      `API base URL is not defined (${isServer ? "API_BASE_URL" : "NEXT_PUBLIC_API_BASE_URL"})`
+    );
+  }
+
+  // Ensure base ends with no trailing slash
+  const normalizedBase = base.replace(/\/+$/, "");
+
+  return new URL(`${normalizedBase}/${search}`);
+};

@@ -16,9 +16,15 @@ import {
 } from "@/components/layout";
 import TempleDetails from "./TempleDetails";
 import CTASection from "./CTASection";
+import { generateStaticParamsEPuja } from "@/services/e-pujaService";
+
+// The key must be pujaSlug, not serviceSlug!
+export async function generateStaticParams() {
+  return generateStaticParamsEPuja();
+}
 
 const page = async ({ params }: any) => {
-  const { pujaSlug } = params;
+  const { pujaSlug } = await params;
 
   const { data, success }: { data: any; success: boolean } =
     await services.ePuja(pujaSlug);

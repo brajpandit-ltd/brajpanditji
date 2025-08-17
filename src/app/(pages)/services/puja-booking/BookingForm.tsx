@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FormEvent, useEffect, useMemo, useState } from "react";
+import React, { FormEvent, memo, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/common";
 import { TextInput, SelectInput, TextareaInput } from "@/components/input";
@@ -22,13 +22,7 @@ type BookingFormData = {
   };
 };
 
-const BookingForm = ({
-  pujaService,
-  pujas,
-}: {
-  pujaService: any | null;
-  pujas: any[];
-}) => {
+const BookingForm = memo(({ pujaService, pujas = [] }: any) => {
   const searchParams = useSearchParams();
   const pujaSlug = searchParams.get("pujaSlug") || "";
   const packageId = searchParams.get("packageId") || "";
@@ -87,10 +81,20 @@ const BookingForm = ({
     e.preventDefault();
     setApiStatus({ ...apiStatus, loading: true });
     try {
-      const data = await services.pujaBooking(formData, false);
+      const bookingDetails = {
+        ...formData,
+        day: new Date(formData?.date).toLocaleDateString("en-US", {
+          weekday: "long",
+        }),
+        price: formData?.packageId?.split(":")[1]?.trim(),
+        orderNumber: `ORD-${Date.now()}`,
+        trackingNumber: `TRK-${Math.random().toString(36).substring(2, 15)}`,
+      };
+
+      const data = await services.pujaBooking(bookingDetails);
 
       setApiStatus({ ...apiStatus, success: true, message: data.message });
-      toast.success("Booking successful!");
+      toast.success(`Booking successful!`);
     } catch (error: any) {
       setApiStatus({ ...apiStatus, error: error.message || "Booking failed" });
       console.error("Error:", error);
@@ -213,6 +217,8 @@ const BookingForm = ({
       </form>
     </div>
   );
-};
+});
+
+BookingForm.displayName = "BookingForm";
 
 export default BookingForm;

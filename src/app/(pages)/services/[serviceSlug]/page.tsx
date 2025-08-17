@@ -6,13 +6,23 @@ import { PujaService } from "@/types/pujaService";
 import { Button } from "@/components/common";
 import services from "@/services/services";
 
+export async function generateStaticParams() {
+  // Replace this with your actual list of slugs, or fetch from your data source
+  return [
+    { serviceSlug: "rudrakshya" },
+    { serviceSlug: "zodiac" },
+    { serviceSlug: "wealth" },
+    // ...add all possible slugs you want to statically generate
+  ];
+}
+
 export default async function page({ params }: { params: any }) {
   const { serviceSlug } = params;
 
   let poojaDetails: PujaService | null = null;
 
   try {
-    const { data } = await services.personalisedPuja(serviceSlug, false);
+    const { data } = await services.personalisedPuja(serviceSlug);
     poojaDetails = data;
   } catch (error) {
     console.error("Error fetching e-pooja services:", error);

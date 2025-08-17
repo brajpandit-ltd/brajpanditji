@@ -4,10 +4,7 @@ import Link from "next/link";
 import React, { Suspense } from "react";
 
 import services from "@/services/services";
-import { SearchPujaFiltersParams } from "@/types/pujaService";
 import SearchHeader from "../SearchHeader";
-
-export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Book Pooja In Temples Across India",
@@ -31,12 +28,8 @@ const pujaCategories = [
   },
 ];
 
-const page = async ({
-  searchParams,
-}: {
-  searchParams: Promise<SearchPujaFiltersParams>;
-}) => {
-  const params = await searchParams;
+const page = async ({ searchParams }: { searchParams: any }) => {
+  const params = searchParams;
 
   const getQueryParams = () => {
     const query = new URLSearchParams();
@@ -67,10 +60,12 @@ const page = async ({
       </section>
 
       <div className="flex-1 px-6 py-8 md:py-12">
-        <SearchHeader
-          basePathname="/services/e-puja"
-          pujaCategories={pujaCategories}
-        />
+        <Suspense fallback={<p>Loading...</p>}>
+          <SearchHeader
+            basePathname="/services/e-puja"
+            pujaCategories={pujaCategories}
+          />
+        </Suspense>
 
         <Suspense fallback={<p>Loading...</p>}>
           <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
