@@ -1,6 +1,140 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## tree structure
+
+```brajpanditji/
+├── public/
+│   ├── assets/
+│   │   ├── articles/
+│   │   │   └── diwalipuja.jpg
+│   │   ├── e-pujas/
+│   │   │   └── pitra.jpeg
+│   │   ├── pandits/
+│   │   │   ├── lalit.png
+│   │   │   └── lalitbhai.jpg
+│   │   ├── pujas/
+│   │   │   ├── bhagwat.jpg
+│   │   │   ├── diya.jpg
+│   │   │   ├── marriage.jpg
+│   │   │   └── shivji.png
+│   │   ├── service-img/
+│   │   │   ├── Group 28.png
+│   │   │   ├── Group 29.png
+│   │   │   ├── Group 30.png
+│   │   │   ├── Group 31.png
+│   │   │   ├── Group 32.png
+│   │   │   ├── Group 33.png
+│   │   │   └── Group 34.png
+│   │   ├── testimonials/
+│   │   │   └── cust.jpg
+│   │   ├── braj-pandit-logo.svg
+│   │   ├── category.png
+│   │   ├── home-hero-light.jpg
+│   │   ├── home-hero.jpg
+│   │   ├── krishna_Service.png
+│   │   ├── Pujari.png
+│   │   └── shivji.png
+│   └── braj-pandit-logo.svg
+├── src/
+│   ├── app/
+│   │   ├── (pages)/
+│   │   │   ├── about-us/
+│   │   │   │   └── page.tsx
+│   │   │   ├── astrology/
+│   │   │   │   └── page.tsx
+│   │   │   ├── blogs/
+│   │   │   │   └── page.tsx
+│   │   │   ├── braj-yatra/
+│   │   │   │   └── page.tsx
+│   │   │   ├── brajshop/
+│   │   │   │   └── page.tsx
+│   │   │   ├── group-puja/
+│   │   │   │   └── page.tsx
+│   │   │   ├── horoscope/
+│   │   │   │   └── page.tsx
+│   │   │   ├── pandits/
+│   │   │   │   ├── [id]/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── services/
+│   │   │   │   ├── e-puja/
+│   │   │   │   │   └── pitru-paksha/
+│   │   │   │   │       └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── zodiac/
+│   │   │       └── [sign]/
+│   │   │           └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── customer/
+│   │   │   └── customer.tsx
+│   │   ├── input/
+│   │   │   └── index.ts
+│   │   ├── latestArticals/
+│   │   │   └── latestArticals.tsx
+│   │   ├── layout/
+│   │   │   ├── Header/
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── Menu.tsx
+│   │   │   │   └── TopHeader.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── index.ts
+│   │   ├── PanditCard/
+│   │   │   ├── PanditCard.tsx
+│   │   │   ├── PanditGrid.tsx
+│   │   │   └── VerifiedPandits.tsx
+│   │   ├── ServiceCard/
+│   │   │   ├── AllServices.tsx
+│   │   │   ├── AllServicesCard.tsx
+│   │   │   ├── ServiceCard.tsx
+│   │   │   └── ServiceSection.tsx
+│   │   ├── ui/
+│   │   │   ├── Button.tsx
+│   │   │   ├── index.ts
+│   │   │   └── ThemeToggle.tsx
+│   │   └── vedicSection.tsx
+│   ├── constants/
+│   │   └── static.json
+│   ├── data/
+│   │   ├── articles.json
+│   │   ├── pandits.json
+│   │   └── pujas.json
+│   ├── locales/
+│   │   ├── en.json
+│   │   └── hi.json
+│   ├── providers/
+│   │   └── themeProvider.tsx
+│   ├── styles/
+│   │   └── marquee.css
+│   ├── types/
+│   │   ├── pandit.d.ts
+│   │   ├── puja.d.ts
+│   │   └── user.d.ts
+│   └── utils/
+│       ├── cloudinaryUpload.js
+│       ├── config.js
+│       └── helpers.js
+├── eslint.config.mjs
+├── final_tree.txt
+├── Home Page.png
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── tailwind.config.ts
+├── tree.js
+├── tree.txt
+└── tsconfig.json
+```
+
 ## Getting Started
+
+
 
 First, run the development server:
 
