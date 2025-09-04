@@ -1,11 +1,118 @@
+"use client";
+
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="text-center">
-      <p className="text-sm text-gray-500">
-        © {new Date().getFullYear()} Braj Pandit Ji. All rights reserved.
-      </p>
+    // py-12 mt-12 for padding and marginfrom top
+    <footer className="bg-white text-gray-700 ">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Logo + Description */}
+        <div>
+          <Image
+            src="/assets/braj-pandit-logo.svg"
+            alt="Braj Pandit Logo"
+            width={160}
+            height={60}
+            className="mb-4"
+          />
+          <p className="text-sm leading-relaxed">
+            Welcome to <span className="font-semibold">Braj Pandit</span> – your
+            trusted source for online puja services, astrology consultations,
+            prasad delivery, and spiritual essentials like Rudraksha, Shaligrams,
+            and Yantras.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/" className="hover:text-primary transition">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/e-puja" className="hover:text-primary transition">
+                E Pujas
+              </Link>
+            </li>
+            <li>
+              <Link href="/vedic-gyan" className="hover:text-primary transition">
+                Vedic Gyan
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-primary transition">
+                About Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3">Contact</h3>
+          <ul className="space-y-2 text-sm">
+            <li>📞 +91 8595009640</li>
+            <li>📞 +91 8595009640</li>
+            <li>
+              📧{" "}
+              <a
+                href="mailto:brajpandit123@gmail.com"
+                className="hover:text-primary transition"
+              >
+                brajpandit123@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Social Links */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/vedagyanam_official/?igsh=ODkyNHhmczZiYnhh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://youtube.com/@vedagyanam?si=587Ev8d_yQzUOVE4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Bottom copyright */}
+      <div className="mt-10 text-center text-sm text-gray-600 border-t border-gray-300 pt-6">
+        © {new Date().getFullYear()} <span className="font-semibold">BrajPandit</span>. All rights reserved.
+      </div>
     </footer>
   );
 };

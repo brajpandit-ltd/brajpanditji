@@ -1,0 +1,127 @@
+brajpanditji/
+├── public/
+│   ├── assets/
+│   │   ├── home-hero.jpg
+│   │   ├── home-hero-light.jpg
+│   │   ├── puja-janmashtami.jpg
+│   │   ├── puja-griha.jpg
+│   │   ├── categories/
+│   │   │   ├── rudraksha.png
+│   │   │   ├── tantra.png
+│   │   │   ├── zodiac.png
+│   │   │   ├── study.png
+│   │   │   ├── wealth.png
+│   │   │   ├── money.png
+│   │   │   └── business.png
+│   │   ├── zodiac/
+│   │   │   ├── aries.png
+│   │   │   ├── taurus.png
+│   │   │   ├── gemini.png
+│   │   │   ├── cancer.png
+│   │   │   ├── leo.png
+│   │   │   ├── virgo.png
+│   │   │   ├── libra.png
+│   │   │   ├── scorpio.png
+│   │   │   ├── sagittarius.png
+│   │   │   ├── capricorn.png
+│   │   │   ├── aquarius.png
+│   │   │   └── pisces.png
+│   └── braj-pandit-logo.svg
+│
+├── src/
+│   ├── app/
+│   │   ├── (pages)/
+│   │   │   ├── about-us/
+│   │   │   │   └── page.tsx
+│   │   │   ├── astrology/
+│   │   │   │   └── page.tsx
+│   │   │   ├── blogs/
+│   │   │   │   └── page.tsx
+│   │   │   ├── braj-yatra/
+│   │   │   │   └── page.tsx
+│   │   │   ├── brajshop/
+│   │   │   │   └── page.tsx
+│   │   │   ├── group-puja/
+│   │   │   │   └── page.tsx     ◀️ NEW (lists group pujas + booking modal)
+│   │   │   ├── horoscope/
+│   │   │   │   └── page.tsx
+│   │   │   ├── services/
+│   │   │   │   ├── page.tsx     ◀️ UPDATED (all pujas grid, filter/search)
+│   │   │   │   └── [id]/        ◀️ NEW (individual puja details)
+│   │   │   │       └── page.tsx
+│   │   │   └── zodiac/
+│   │   │       └── [sign]/
+│   │   │           └── page.tsx ◀️ NEW (stub per zodiac sign)
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx           ◀️ UPDATED (imports new Header/Footer)
+│   │   └── page.tsx             ◀️ UPDATED (homepage with Hero, etc.)
+│   │
+│   ├── components/
+│   │   ├── Hero/
+│   │   │   └── Hero.tsx         ◀️ NEW
+│   │   ├── CategoryScroller/
+│   │   │   └── CategoryScroller.tsx ◀️ NEW
+│   │   ├── ServiceCard/
+│   │   │   └── ServiceCard.tsx  ◀️ NEW
+│   │   │   └── __tests__/ServiceCard.test.tsx ◀️ NEW (unit test)
+│   │   ├── VerifiedPandit/
+│   │   │   └── VerifiedPandit.tsx ◀️ NEW
+│   │   ├── Testimonials/
+│   │   │   └── Testimonials.tsx ◀️ NEW
+│   │   ├── ZodiacGrid/
+│   │   │   └── ZodiacGrid.tsx   ◀️ NEW
+│   │   ├── Articles/
+│   │   │   └── ArticlesList.tsx ◀️ NEW
+│   │   ├── Booking/
+│   │   │   └── BookingModal.tsx ◀️ NEW (form, localStorage)
+│   │   ├── layout/
+│   │   │   ├── Header/
+│   │   │   │   ├── Header.tsx   ◀️ UPDATED (CTA + nav + mobile menu)
+│   │   │   │   └── Menu.tsx
+│   │   │   ├── Footer.tsx       ◀️ UPDATED (links + social)
+│   │   │   └── MobileMenu.tsx   ◀️ NEW (drawer for mobile nav)
+│   │   └── ui/
+│   │       ├── Button.tsx
+│   │       ├── ThemeToggle.tsx
+│   │       └── index.ts
+│   │
+│   ├── constants/
+│   │   └── static.json          ◀️ UPDATED (logo, menuItems, links)
+│   │
+│   ├── data/
+│   │   ├── articles.json        ◀️ UPDATED (blog cards data)
+│   │   └── pujas.json           ◀️ NEW (8–12 puja items with schema)
+│   │
+│   ├── locales/
+│   │   ├── en.json
+│   │   └── hi.json
+│   │
+│   ├── providers/
+│   │   └── themeProvider.tsx
+│   │
+│   ├── styles/
+│   │   ├── marquee.css
+│   │   └── components.css       ◀️ NEW (scroll snap, shadows, etc.)
+│   │
+│   ├── types/
+│   │   ├── puja.d.ts            ◀️ NEW (Puja type definition)
+│   │   └── user.d.ts
+│   │
+│   └── utils/
+│       ├── cloudinaryUpload.js
+│       ├── config.js
+│       └── helpers.js
+│
+├── eslint.config.mjs
+├── Home Page.png
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── tailwind.config.ts
+├── tree.js
+├── tree.txt
+└── tsconfig.json

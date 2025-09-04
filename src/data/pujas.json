@@ -1,0 +1,50 @@
+[
+  {
+    "id": "janmashtami",
+    "title": "Krishna Janmashtami Puja",
+    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
+    "image": "/assets/pujari.png",
+    "price": 5100,
+    "category": "festival"
+  },
+  {
+    "id": "griha-pravesh",
+    "title": "Griha Pravesh Puja",
+    "description": "Auspicious ceremony to purify and bless your new home.",
+    "image": "/assets/pujari.png",
+    "price": 3500,
+    "category": "house"
+  },
+  {
+    "id": "griha-",
+    "title": "Griha Pravesh Puja",
+    "description": "Auspicious ceremony to purify and bless your new home.",
+    "image": "/assets/pujari.png",
+    "price": 3500,
+    "category": "house"
+  },
+  {
+    "id": "griha-pesh",
+    "title": "Griha Pravesh Puja",
+    "description": "Auspicious ceremony to purify and bless your new home.",
+    "image": "/assets/pujari.png",
+    "price": 3500,
+    "category": "house"
+  },
+  {
+    "id": "gravesh",
+    "title": "Griha Pravesh Puja",
+    "description": "Auspicious ceremony to purify and bless your new home.",
+    "image": "/assets/pujari.png",
+    "price": 3500,
+    "category": "house"
+  },
+  {
+    "id": "griha-pravesh",
+    "image": "/assets/pujari.png",
+    "description": "Auspicious ceremony to purify and bless your new home.",
+    "image": "/assets/pujari.png",
+    "price": 3500,
+    "category": "house"
+  }
+]

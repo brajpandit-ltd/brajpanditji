@@ -1,0 +1,51 @@
+[
+  {
+    "id": "pandit-1",
+    "name": "Pandit Ramesh Sharma",
+    "specialization": "Vedic Astrology & Griha Pravesh",
+    "experience": "15+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  },
+  {
+    "id": "pandit-2",
+    "name": "Pandit Suresh Tripathi",
+    "specialization": "Marriage & Sanskar Ceremonies",
+    "experience": "20+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  },
+  {
+    "id": "pandit-3",
+    "name": "Pandit Harish Chaturvedi",
+    "specialization": "Kundali Matching & Muhurat",
+    "experience": "12+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  },
+  {
+    "id": "pandit-3",
+    "name": "Pandit Harish Chaturvedi",
+    "specialization": "Kundali Matching & Muhurat",
+    "experience": "12+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  },
+  {
+    "id": "pandit-3",
+    "name": "Pandit Harish Chaturvedi",
+    "specialization": "Kundali Matching & Muhurat",
+    "experience": "12+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  },
+  {
+    "id": "pandit-3",
+    "name": "Pandit Harish Chaturvedi",
+    "specialization": "Kundali Matching & Muhurat",
+    "experience": "12+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  },
+  {
+    "id": "pandit-3",
+    "name": "Pandit Harish Chaturvedi",
+    "specialization": "Kundali Matching & Muhurat",
+    "experience": "12+ years",
+    "image": "/assets/pandits/lalitbhai.jpg"
+  }
+]
