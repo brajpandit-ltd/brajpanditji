@@ -6,12 +6,26 @@ brajpanditji/
 │   │   ├── pandits/
 │   │   │   ├── lalit.png
 │   │   │   └── lalitbhai.jpg
+│   │   ├── pujas/
+│   │   │   ├── bhagwat.jpg
+│   │   │   ├── diya.jpg
+│   │   │   ├── marriage.jpg
+│   │   │   └── shivji.png
+│   │   ├── service-img/
+│   │   │   ├── Group 28.png
+│   │   │   ├── Group 29.png
+│   │   │   ├── Group 30.png
+│   │   │   ├── Group 31.png
+│   │   │   ├── Group 32.png
+│   │   │   ├── Group 33.png
+│   │   │   └── Group 34.png
 │   │   ├── testimonials/
 │   │   │   └── cust.jpg
 │   │   ├── braj-pandit-logo.svg
 │   │   ├── category.png
 │   │   ├── home-hero-light.jpg
 │   │   ├── home-hero.jpg
+│   │   ├── krishna_Service.png
 │   │   ├── Pujari.png
 │   │   └── shivji.png
 │   └── braj-pandit-logo.svg
@@ -32,7 +46,14 @@ brajpanditji/
 │   │   │   │   └── page.tsx
 │   │   │   ├── horoscope/
 │   │   │   │   └── page.tsx
+│   │   │   ├── pandits/
+│   │   │   │   ├── [id]/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
 │   │   │   ├── services/
+│   │   │   │   ├── e-puja/
+│   │   │   │   │   └── pitru-paksha/
+│   │   │   │   │       └── page.tsx
 │   │   │   │   └── page.tsx
 │   │   │   └── zodiac/
 │   │   │       └── [sign]/
@@ -51,12 +72,17 @@ brajpanditji/
 │   │   ├── layout/
 │   │   │   ├── Header/
 │   │   │   │   ├── Header.tsx
-│   │   │   │   └── Menu.tsx
+│   │   │   │   ├── Menu.tsx
+│   │   │   │   └── TopHeader.tsx
 │   │   │   ├── Footer.tsx
 │   │   │   └── index.ts
 │   │   ├── PanditCard/
+│   │   │   ├── PanditCard.tsx
+│   │   │   ├── PanditGrid.tsx
 │   │   │   └── VerifiedPandits.tsx
 │   │   ├── ServiceCard/
+│   │   │   ├── AllServices.tsx
+│   │   │   ├── AllServicesCard.tsx
 │   │   │   ├── ServiceCard.tsx
 │   │   │   └── ServiceSection.tsx
 │   │   ├── ui/

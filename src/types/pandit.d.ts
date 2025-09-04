@@ -4,4 +4,5 @@ export interface Pandit {
   specialization: string;
   experience: string;
   image: string;
+  About_Me: string;
 }

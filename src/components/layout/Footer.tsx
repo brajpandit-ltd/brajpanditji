@@ -3,10 +3,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    // py-12 mt-12 for padding and marginfrom top
     <footer className="bg-white text-gray-700 py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo + Description */}
@@ -71,11 +71,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Links */}
+        {/* Social Links with Icons */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
           <ul className="space-y-2 text-sm">
-            <li>
+            <li className="flex items-center gap-2">
+              <FaFacebookF className="text-blue-600" /> 
               <a
                 href="https://www.facebook.com"
                 target="_blank"
@@ -85,7 +86,8 @@ const Footer = () => {
                 Facebook
               </a>
             </li>
-            <li>
+            <li className="flex items-center gap-2">
+              <FaInstagram className="text-pink-500" /> 
               <a
                 href="https://www.instagram.com/vedagyanam_official/?igsh=ODkyNHhmczZiYnhh"
                 target="_blank"
@@ -95,7 +97,8 @@ const Footer = () => {
                 Instagram
               </a>
             </li>
-            <li>
+            <li className="flex items-center gap-2">
+              <FaYoutube className="text-red-600" /> 
               <a
                 href="https://youtube.com/@vedagyanam?si=587Ev8d_yQzUOVE4"
                 target="_blank"
@@ -110,7 +113,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom copyright */}
-      <div className="mt-10 text-center text-sm text-gray-600 border-t border-gray-300 pt-6">
+      <div className="mt-10 text-center text-sm text-gray-600 border-t border-gray-300 pt-2">
         © {new Date().getFullYear()} <span className="font-semibold">BrajPandit</span>. All rights reserved.
       </div>
     </footer>
