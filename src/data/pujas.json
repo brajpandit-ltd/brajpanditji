@@ -3,48 +3,128 @@
     "id": "janmashtami",
     "title": "Krishna Janmashtami Puja",
     "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
-    "image": "/assets/pujari.png",
+    "image": "/assets/pujas/diya.jpg",
     "price": 5100,
+    "category": "festival"
+  },
+  {
+    "id": "janmashtai",
+    "title": "Krishna Janmashtami Puja",
+    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
+    "image": "/assets/pujas/shivji.png",
+    "price": 5100,
+    "category": "festival"
+  },
+  {
+    "id": "janmashtam",
+    "title": "Krishna Janmashtami Puja",
+    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
+    "image": "/assets/pujas/diya.jpg",
+    "price": 5100,
+    "category": "festival"
+  },
+  {
+    "id": "diwali",
+    "title": "Diwali Lakshmi Puja",
+    "description": "Invoke Goddess Lakshmi for wealth, peace, and prosperity this Diwali.",
+    "image": "/assets/pujari.png",
+    "price": 4500,
     "category": "festival"
   },
   {
     "id": "griha-pravesh",
     "title": "Griha Pravesh Puja",
     "description": "Auspicious ceremony to purify and bless your new home.",
-    "image": "/assets/pujari.png",
+    "image": "/assets/pujas/diya.jpg",
     "price": 3500,
     "category": "house"
   },
   {
-    "id": "griha-",
-    "title": "Griha Pravesh Puja",
-    "description": "Auspicious ceremony to purify and bless your new home.",
+    "id": "vastu-hati",
+    "title": "Vastu Shanti Puja",
+    "description": "Balance energies in your home for peace, harmony, and prosperity.",
     "image": "/assets/pujari.png",
-    "price": 3500,
+    "price": 4000,
     "category": "house"
   },
   {
-    "id": "griha-pesh",
-    "title": "Griha Pravesh Puja",
-    "description": "Auspicious ceremony to purify and bless your new home.",
+    "id": "vastu-shanti",
+    "title": "Vastu Shanti Puja",
+    "description": "Balance energies in your home for peace, harmony, and prosperity.",
     "image": "/assets/pujari.png",
-    "price": 3500,
+    "price": 4000,
     "category": "house"
   },
   {
-    "id": "gravesh",
-    "title": "Griha Pravesh Puja",
-    "description": "Auspicious ceremony to purify and bless your new home.",
+    "id": "vastu-shant",
+    "title": "Vastu Shanti Puja",
+    "description": "Balance energies in your home for peace, harmony, and prosperity.",
     "image": "/assets/pujari.png",
-    "price": 3500,
+    "price": 4000,
     "category": "house"
   },
   {
-    "id": "griha-pravesh",
+    "id": "sadi",
+    "title": "Vivah Sanskar (Wedding Puja)",
+    "description": "Sacred rituals for a blissful and blessed married life.",
     "image": "/assets/pujari.png",
-    "description": "Auspicious ceremony to purify and bless your new home.",
+    "price": 11000,
+    "category": "wedding"
+  },
+  {
+    "id": "wedding",
+    "title": "Vivah Sanskar (Wedding Puja)",
+    "description": "Sacred rituals for a blissful and blessed married life.",
     "image": "/assets/pujari.png",
-    "price": 3500,
-    "category": "house"
+    "price": 11000,
+    "category": "wedding"
+  },
+  {
+    "id": "weddi",
+    "title": "Vivah Sanskar (Wedding Puja)",
+    "description": "Sacred rituals for a blissful and blessed married life.",
+    "image": "/assets/pujari.png",
+    "price": 11000,
+    "category": "wedding"
+  },
+  {
+    "id": "engagement",
+    "title": "Engagement Puja",
+    "description": "Blessings for a happy and prosperous union before marriage.",
+    "image": "/assets/pujas/marriage.jpg",
+    "price": 5000,
+    "category": "wedding"
+  },
+  {
+    "id": "satyanarayan",
+    "title": "Satyanarayan Katha",
+    "description": "Perform sacred Satyanarayan Katha for prosperity, health, and family peace.",
+    "image": "/assets/pujas/diya.jpg",
+    "price": 2500,
+    "category": "spiritual"
+  },
+  {
+    "id": "rudrabhishek",
+    "title": "Rudrabhishek Puja",
+    "description": "Invoke Lord Shiva for strength, protection, and spiritual growth.",
+    "image": "/assets/pujas/bhagwat.jpg",
+    "price": 6000,
+    "category": "spiritual"
+  },
+  {
+    "id": "rudrabhishe",
+    "title": "Rudrabhishek Puja",
+    "description": "Invoke Lord Shiva for strength, protection, and spiritual growth.",
+    "image": "/assets/pujari.png",
+    "price": 6000,
+    "category": "spiritual"
+  },
+  {
+    "id": "bhagva",
+    "title": "Bhagavat Katha",
+    "description": "Listen to the divine stories of Lord Krishna and his leelas.",
+    "image": "/assets/pujas/bhagwat.jpg",
+    "price": 6000,
+    "category": "spiritual"
   }
 ]

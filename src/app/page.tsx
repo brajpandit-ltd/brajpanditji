@@ -3,11 +3,7 @@
 import { Button } from "@/components/ui";
 import Image from "next/image";
 
-// import pujas from "@/data/pujas.json"; // JSON file with services
-// import { Puja } from "@/types/puja"; // your type definition
-// import ServiceCard from "@/components/ServiceCard/ServiceCard";
-
-import ServiceSection from "@/components/ServiceCard/ServiceSection";
+import {ServiceSection} from "@/components/ServiceCard/ServiceSection";
 
 // import vedicSection from "@/components/vedicSection";
 

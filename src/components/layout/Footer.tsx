@@ -7,7 +7,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     // py-12 mt-12 for padding and marginfrom top
-    <footer className="bg-white text-gray-700 ">
+    <footer className="bg-white text-gray-700 py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo + Description */}
         <div>

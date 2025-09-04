@@ -1,10 +1,12 @@
+
+//ServiceCard//ServiceSection.tsx
 "use client";
 
 import pujas from "@/data/pujas.json";
 import { Puja } from "@/types/puja";
 import { ServiceCard } from "./ServiceCard";
 
-export default function ServiceSection() {
+export function ServiceSection() {
   return (
     <section className="px-4 md:px-10 py-16">
       {/* Heading */}

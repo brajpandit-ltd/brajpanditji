@@ -27,7 +27,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
-          <h1 className="text-primary">hello</h1>
+          
         </ThemeProvider>
       </body>
     </html>
