@@ -8,12 +8,20 @@
     "category": "festival"
   },
   {
-    "id": "janmashtai",
+    "id": "kundali padna",
     "title": "Krishna Janmashtami Puja",
     "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
     "image": "/assets/pujas/shivji.png",
     "price": 5100,
-    "category": "festival"
+    "category": "kundali"
+  },
+  {
+    "id": "kundali padna",
+    "title": "Krishna Janmashtami Puja",
+    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
+    "image": "/assets/pujas/kundali.png",
+    "price": 5100,
+    "category": "kundali"
   },
   {
     "id": "janmashtam",
@@ -51,9 +59,9 @@
     "id": "vastu-shanti",
     "title": "Vastu Shanti Puja",
     "description": "Balance energies in your home for peace, harmony, and prosperity.",
-    "image": "/assets/pujari.png",
+    "image": "/assets/pujas/kundali.png",
     "price": 4000,
-    "category": "house"
+    "category": "kundali"
   },
   {
     "id": "vastu-shant",
@@ -67,7 +75,7 @@
     "id": "sadi",
     "title": "Vivah Sanskar (Wedding Puja)",
     "description": "Sacred rituals for a blissful and blessed married life.",
-    "image": "/assets/pujari.png",
+    "image": "/assets/pujas/love.png",
     "price": 11000,
     "category": "wedding"
   },
@@ -75,15 +83,15 @@
     "id": "wedding",
     "title": "Vivah Sanskar (Wedding Puja)",
     "description": "Sacred rituals for a blissful and blessed married life.",
-    "image": "/assets/pujari.png",
+    "image": "/assets/pujas/marriage.jpg",
     "price": 11000,
     "category": "wedding"
   },
   {
-    "id": "weddi",
+    "id": "Love ",
     "title": "Vivah Sanskar (Wedding Puja)",
     "description": "Sacred rituals for a blissful and blessed married life.",
-    "image": "/assets/pujari.png",
+    "image": "/assets/pujas/love.png",
     "price": 11000,
     "category": "wedding"
   },

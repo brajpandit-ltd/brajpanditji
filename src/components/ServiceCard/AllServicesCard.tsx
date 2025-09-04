@@ -10,15 +10,16 @@ interface AllServicesCardProps {
 
 export function AllServicesCard({ puja }: AllServicesCardProps) {
   return (
-    <div className="flex flex-col h-20 rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white">
-      {/* Image */}
-      <div className="relative w-full h-72">
+    <div className="flex flex-col rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white">
+
+  <div className="relative w-full h-72">
         <Image
-          src={puja.image}
-          alt={puja.title}
-          fill
-          className="object-cover transform group-hover:scale-105 transition-transform duration-500"
-        />
+  src={puja.image}
+  alt={puja.title}
+  fill
+  className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+/>
+
         {/* Badge */}
         <div className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-yellow-400 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
           {puja.category}

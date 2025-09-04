@@ -3,6 +3,8 @@ brajpanditji/
 │   ├── assets/
 │   │   ├── articles/
 │   │   │   └── diwalipuja.jpg
+│   │   ├── e-pujas/
+│   │   │   └── pitra.jpeg
 │   │   ├── pandits/
 │   │   │   ├── lalit.png
 │   │   │   └── lalitbhai.jpg

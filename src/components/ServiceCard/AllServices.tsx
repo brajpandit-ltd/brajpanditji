@@ -3,6 +3,7 @@
 import pujas from "@/data/pujas.json";
 import { Puja } from "@/types/puja";
 import { AllServicesCard } from "./AllServicesCard";
+import { ServiceCard } from "./ServiceCard";
 
 export function AllServices() {
   // Group pujas by category
@@ -44,6 +45,7 @@ export function AllServices() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                 {groupedPujas[category].map((puja) => (
                   <AllServicesCard key={puja.id} puja={puja} />
+                 
                 ))}
               </div>
 
