@@ -17,7 +17,7 @@ const articles: Article[] = [
     title: "Significance of Raksha Bandhan Puja",
     description:
       "Explore the spiritual importance of Raksha Bandhan rituals and how they strengthen the bond between siblings.",
-    image: "/assets/articles/diwalipuja.jpg",
+    image: "/assets/articles/premmandir.png",
     date: "August 30, 2025",
   },
   {
@@ -33,7 +33,7 @@ const articles: Article[] = [
     title: "Vastu Tips for Positive Energy",
     description:
       "Learn simple yet effective Vastu Shastra tips to bring harmony, peace, and positivity into your home.",
-    image: "/assets/articles/diwalipuja.jpg",
+    image: "/assets/articles/premmandir.png",
     date: "July 15, 2025",
   },
 ];

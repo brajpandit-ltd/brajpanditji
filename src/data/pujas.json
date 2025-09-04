@@ -8,6 +8,14 @@
     "category": "festival"
   },
   {
+    "id": "Holi",
+    "title": "Krishna Janmashtami Puja",
+    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
+    "image": "/assets/pujas/diya.jpg",
+    "price": 5100,
+    "category": "festival"
+  },
+  {
     "id": "kundali padna",
     "title": "Krishna Janmashtami Puja",
     "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
@@ -54,6 +62,14 @@
     "image": "/assets/pujari.png",
     "price": 4000,
     "category": "house"
+  },
+  {
+    "id": "vastu-shanti",
+    "title": "Vastu Shanti Puja",
+    "description": "Balance energies in your home for peace, harmony, and prosperity.",
+    "image": "/assets/pujas/kundali.png",
+    "price": 4000,
+    "category": "kundali"
   },
   {
     "id": "vastu-shanti",
