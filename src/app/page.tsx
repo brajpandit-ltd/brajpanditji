@@ -2,7 +2,7 @@
 //src/app/page.tsx
 import { Button } from "@/components/ui";
 import Image from "next/image";
-
+import Link from "next/link";
 import {ServiceSection} from "@/components/ServiceCard/ServiceSection";
 
 // import vedicSection from "@/components/vedicSection";
@@ -42,8 +42,14 @@ export default function Home() {
           </p>
 
           <div className="flex items-center justify-center flex-col md:flex-row mt-8 gap-6 md:gap-14">
-            <Button label="Book Your Pandit Ji" variant="primary" />
-            <Button label="See All Pooja Services" variant="default" />
+            <Link href="/pandits">
+        <Button label="Book Your Pandit Ji" variant="primary" />
+      </Link>
+
+      {/* Button to /services */}
+      <Link href="/services">
+        <Button label="See All Pooja Services" variant="default" />
+      </Link>
           </div>
         </div>
       </section>
