@@ -2,7 +2,8 @@ brajpanditji/
 ├── public/
 │   ├── assets/
 │   │   ├── articles/
-│   │   │   └── diwalipuja.jpg
+│   │   │   ├── diwalipuja.jpg
+│   │   │   └── premmandir.png
 │   │   ├── e-pujas/
 │   │   │   └── pitra.jpeg
 │   │   ├── pandits/
@@ -11,7 +12,11 @@ brajpanditji/
 │   │   ├── pujas/
 │   │   │   ├── bhagwat.jpg
 │   │   │   ├── diya.jpg
+│   │   │   ├── havan.gif
+│   │   │   ├── kundali.png
+│   │   │   ├── love.png
 │   │   │   ├── marriage.jpg
+│   │   │   ├── palmistry.jpg
 │   │   │   └── shivji.png
 │   │   ├── service-img/
 │   │   │   ├── Group 28.png
@@ -23,13 +28,16 @@ brajpanditji/
 │   │   │   └── Group 34.png
 │   │   ├── testimonials/
 │   │   │   └── cust.jpg
+│   │   ├── adaptive-icon.png
 │   │   ├── braj-pandit-logo.svg
 │   │   ├── category.png
 │   │   ├── home-hero-light.jpg
 │   │   ├── home-hero.jpg
 │   │   ├── krishna_Service.png
 │   │   ├── Pujari.png
-│   │   └── shivji.png
+│   │   ├── qr.jpeg
+│   │   ├── shivji.png
+│   │   └── temple.jpg
 │   └── braj-pandit-logo.svg
 ├── src/
 │   ├── app/
@@ -53,6 +61,8 @@ brajpanditji/
 │   │   │   │   │   └── page.tsx
 │   │   │   │   └── page.tsx
 │   │   │   ├── services/
+│   │   │   │   ├── book-pujas/
+│   │   │   │   │   └── page.tsx
 │   │   │   │   ├── e-puja/
 │   │   │   │   │   └── pitru-paksha/
 │   │   │   │   │       └── page.tsx
@@ -96,6 +106,7 @@ brajpanditji/
 │   │   └── static.json
 │   ├── data/
 │   │   ├── articles.json
+│   │   ├── brajyatra.json
 │   │   ├── pandits.json
 │   │   └── pujas.json
 │   ├── locales/
@@ -115,7 +126,6 @@ brajpanditji/
 │       └── helpers.js
 ├── eslint.config.mjs
 ├── final_tree.txt
-├── Home Page.png
 ├── next-env.d.ts
 ├── next.config.ts
 ├── package-lock.json

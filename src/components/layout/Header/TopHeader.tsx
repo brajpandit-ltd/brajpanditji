@@ -18,7 +18,7 @@ export default function TopHeader() {
 
           <div className="flex items-center gap-2 border border-dotted border-red-600 rounded-full px-3 py-1">
             <span className="font-semibold text-gray-900 text-sm md:text-base">
-              Pitru Paksha / Shradh Puja
+              Pitru Paksha / Shradh E -Puja
             </span>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function TopHeader() {
             href="/services/e-puja/pitru-paksha"
             className="bg-red-600 text-white px-5 py-1.5 rounded-full font-medium shadow-md hover:bg-red-700 transition text-sm md:text-base"
           >
-            Book Now
+            200 /-  Book Now
           </Link>
         </div>
 

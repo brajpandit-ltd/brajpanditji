@@ -1,7 +1,6 @@
-
-//ServiceCard//ServiceSection.tsx
 "use client";
 
+import Link from "next/link";
 import pujas from "@/data/pujas.json";
 import { Puja } from "@/types/puja";
 import { ServiceCard } from "./ServiceCard";
@@ -26,7 +25,13 @@ export function ServiceSection() {
       {/* Services Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {(pujas as Puja[]).slice(0, 6).map((puja) => (
-          <ServiceCard key={puja.id} puja={puja} />
+          <Link
+            key={puja.id}
+            href={`/services/book-pujas?puja=${encodeURIComponent(puja.id)}`}
+            className="block hover:scale-[1.02] transition-transform"
+          >
+            <ServiceCard puja={puja} />
+          </Link>
         ))}
       </div>
 

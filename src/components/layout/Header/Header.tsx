@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui";
+import Link from "next/link";
 import Menu from "./Menu";
 import { header } from "@/constants/static.json";
 import TopHeader from "./TopHeader"; // Import TopHeader
@@ -26,7 +27,9 @@ const Header = () => {
             wrapperClass="flex-1 justify-center"
           />
 
-          <Button variant="primary" label="Book Your Panditji" />
+          <Link href="/pandits">
+        <Button label="Book Your Pandit Ji" variant="primary" />
+      </Link>
         </div>
 
         {/* Mobile Menu */}
