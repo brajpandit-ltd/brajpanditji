@@ -3,7 +3,10 @@ brajpanditji/
 │   ├── assets/
 │   │   ├── articles/
 │   │   │   ├── diwalipuja.jpg
-│   │   │   └── premmandir.png
+│   │   │   ├── premmandir.png
+│   │   │   └── temple.jpg
+│   │   ├── brajYatra/
+│   │   │   └── hero_Braj_Yatra.jpeg
 │   │   ├── e-pujas/
 │   │   │   └── pitra.jpeg
 │   │   ├── pandits/
@@ -26,6 +29,8 @@ brajpanditji/
 │   │   │   ├── Group 32.png
 │   │   │   ├── Group 33.png
 │   │   │   └── Group 34.png
+│   │   ├── team/
+│   │   │   └── lalit.jpg
 │   │   ├── testimonials/
 │   │   │   └── cust.jpg
 │   │   ├── adaptive-icon.png
@@ -33,6 +38,7 @@ brajpanditji/
 │   │   ├── category.png
 │   │   ├── home-hero-light.jpg
 │   │   ├── home-hero.jpg
+│   │   ├── horoscope.jpg
 │   │   ├── krishna_Service.png
 │   │   ├── Pujari.png
 │   │   ├── qr.jpeg
@@ -106,7 +112,7 @@ brajpanditji/
 │   │   └── static.json
 │   ├── data/
 │   │   ├── articles.json
-│   │   ├── brajyatra.json
+│   │   ├── brajYatra.json
 │   │   ├── pandits.json
 │   │   └── pujas.json
 │   ├── locales/
@@ -117,6 +123,7 @@ brajpanditji/
 │   ├── styles/
 │   │   └── marquee.css
 │   ├── types/
+│   │   ├── brajYatra.d.ts
 │   │   ├── pandit.d.ts
 │   │   ├── puja.d.ts
 │   │   └── user.d.ts
