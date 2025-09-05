@@ -117,7 +117,7 @@ export default function CustomerTestimonials() {
 
         {/* hint */}
         <div className="mt-2 text-sm text-gray-400 text-right hidden sm:block">
-          👉 Scroll to see more
+           Scroll to see more
         </div>
       </div>
     </section>

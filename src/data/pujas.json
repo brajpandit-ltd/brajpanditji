@@ -1,154 +1,165 @@
 [
   {
-    "id": "janmashtami",
-    "title": "Krishna Janmashtami Puja",
-    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
-    "image": "/assets/pujas/diya.jpg",
-    "price": 5100,
-    "category": "festival"
+    "title": "Janmastami Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799258/Santan-Gopal-Mantra-Jaap_vvvwet.webp",
+    "description": "Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. People perform special puja to invite Her into their homes. Invite prosperity by booking a traditional Laxmi-Ganesh Puja.",
+    "category": "Festivals",
+    "price": 500
   },
   {
-    "id": "Holi",
-    "title": "Krishna Janmashtami Puja",
-    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
-    "image": "/assets/pujas/diya.jpg",
-    "price": 5100,
-    "category": "festival"
+    "title": "Diwali Pooja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799256/diwali-puja_ww27yj.webp",
+    "description": "Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. People perform special puja to invite Her into their homes. Invite prosperity by booking a traditional Laxmi-Ganesh Puja.",
+    "category": "Festivals",
+    "price": 500
   },
   {
-    "id": "kundali padna",
-    "title": "Krishna Janmashtami Puja",
-    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
-    "image": "/assets/pujas/shivji.png",
-    "price": 5100,
-    "category": "kundali"
+    "title": "Navgraha Shanti",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799260/Sunderkand-Path_xmjnfk.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Household Rituals",
+    "price": 1500
   },
   {
-    "id": "kundali padna",
-    "title": "Krishna Janmashtami Puja",
-    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
-    "image": "/assets/pujas/kundali.png",
-    "price": 5100,
-    "category": "kundali"
+    "title": "Marriage Puja",
+    "image": "https://res.cloudinary.com/djtq2eywl/image/upload/v1751097306/marriage_mr0p6b.jpg",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Life Events",
+    "price": 800
   },
   {
-    "id": "janmashtam",
-    "title": "Krishna Janmashtami Puja",
-    "description": "Celebrate the birth of Lord Krishna with authentic Vedic rituals.",
-    "image": "/assets/pujas/diya.jpg",
-    "price": 5100,
-    "category": "festival"
+    "title": "Akhand Ramayan Path",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799260/Sunderkand-Path_xmjnfk.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Ancestral & Remedial",
+    "price": 800
   },
   {
-    "id": "diwali",
-    "title": "Diwali Lakshmi Puja",
-    "description": "Invoke Goddess Lakshmi for wealth, peace, and prosperity this Diwali.",
-    "image": "/assets/pujari.png",
-    "price": 4500,
-    "category": "festival"
+    "title": "Akshra Abhyasam",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799255/angarak-dosha-puja_oov87w.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Ancestral & Remedial",
+    "price": 800
   },
   {
-    "id": "griha-pravesh",
-    "title": "Griha Pravesh Puja",
-    "description": "Auspicious ceremony to purify and bless your new home.",
-    "image": "/assets/pujas/diya.jpg",
-    "price": 3500,
-    "category": "house"
+    "title": "Bajaranj Ban Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799260/Sunderkand-Path_xmjnfk.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Ancestral & Remedial",
+    "price": 800
   },
   {
-    "id": "vastu-hati",
-    "title": "Vastu Shanti Puja",
-    "description": "Balance energies in your home for peace, harmony, and prosperity.",
-    "image": "/assets/pujari.png",
-    "price": 4000,
-    "category": "house"
+    "title": "Shri Gayatri Havan",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799259/satyanarayan_2_g0u9lp.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Ancestral & Remedial",
+    "price": 800
   },
   {
-    "id": "vastu-shanti",
-    "title": "Vastu Shanti Puja",
-    "description": "Balance energies in your home for peace, harmony, and prosperity.",
-    "image": "/assets/pujas/kundali.png",
-    "price": 4000,
-    "category": "kundali"
+    "title": "Sri Lakshmi narsimha Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799256/durga_puja_bangce.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Ancestral & Remedial",
+    "price": 800
   },
   {
-    "id": "vastu-shanti",
-    "title": "Vastu Shanti Puja",
-    "description": "Balance energies in your home for peace, harmony, and prosperity.",
-    "image": "/assets/pujas/kundali.png",
-    "price": 4000,
-    "category": "kundali"
+    "title": "Satya Narayan Path",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799259/satyanarayan_2_g0u9lp.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Household Rituals",
+    "price": 800
+  },
+  
+  {
+    "title": "Grah Pravesh",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799259/satyanarayan_2_g0u9lp.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Household Rituals",
+    "price": 800
   },
   {
-    "id": "vastu-shant",
-    "title": "Vastu Shanti Puja",
-    "description": "Balance energies in your home for peace, harmony, and prosperity.",
-    "image": "/assets/pujari.png",
-    "price": 4000,
-    "category": "house"
+    "title": "Marriage Puja",
+    "image": "https://res.cloudinary.com/djtq2eywl/image/upload/v1751097306/marriage_mr0p6b.jpg",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Life Events",
+    "price": 800
   },
   {
-    "id": "sadi",
-    "title": "Vivah Sanskar (Wedding Puja)",
-    "description": "Sacred rituals for a blissful and blessed married life.",
-    "image": "/assets/pujas/love.png",
-    "price": 11000,
-    "category": "wedding"
+    "title": "Ganesh Chaturthi Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799260/Sunderkand-Path_xmjnfk.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Festivals",
+    "price": 800
   },
   {
-    "id": "wedding",
-    "title": "Vivah Sanskar (Wedding Puja)",
-    "description": "Sacred rituals for a blissful and blessed married life.",
-    "image": "/assets/pujas/marriage.jpg",
-    "price": 11000,
-    "category": "wedding"
+    "title": "Rudra Abhishek",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799258/rudrabhishek-Puja_2_bjyvcz.webp",
+    "description": "Navgraha Shanti is performed to appease nine celestial bodies (Navagrahas). It brings peace, prosperity, and harmony by reducing planetary doshas.",
+    "category": "Ancestral & Remedial",
+    "price": 800
+  },
+  
+  {
+    "title": "Kaal Sarp Dosh Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799256/kaal-sarp-dosh-puja_2_tky800fw.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Ancestral & Remedial",
+    "price": 5
   },
   {
-    "id": "Love ",
-    "title": "Vivah Sanskar (Wedding Puja)",
-    "description": "Sacred rituals for a blissful and blessed married life.",
-    "image": "/assets/pujas/love.png",
-    "price": 11000,
-    "category": "wedding"
+    "title": "Pitru Dosh Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799258/pitru-paksha-puja_uxix79.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Household Rituals",
+    "price": 5
   },
   {
-    "id": "engagement",
-    "title": "Engagement Puja",
-    "description": "Blessings for a happy and prosperous union before marriage.",
-    "image": "/assets/pujas/marriage.jpg",
-    "price": 5000,
-    "category": "wedding"
+    "title": "Yamuna Puja",
+    "image": "https://res.cloudinary.com/djtq2eywl/image/upload/v1750952978/lqn0x1ztufy6lwvyvyhh.jpg",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Ancestral & Remedial",
+    "price": 5
   },
   {
-    "id": "satyanarayan",
-    "title": "Satyanarayan Katha",
-    "description": "Perform sacred Satyanarayan Katha for prosperity, health, and family peace.",
-    "image": "/assets/pujas/diya.jpg",
-    "price": 2500,
-    "category": "spiritual"
+    "title": "Rin(Debt) Mukti puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799260/Sunderkand-Path_xmjnfk.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Ancestral & Remedial",
+    "price": 5
   },
   {
-    "id": "rudrabhishek",
-    "title": "Rudrabhishek Puja",
-    "description": "Invoke Lord Shiva for strength, protection, and spiritual growth.",
-    "image": "/assets/pujas/bhagwat.jpg",
-    "price": 6000,
-    "category": "spiritual"
+    "title": "sarswati Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799259/saraswati-puja_1_h9gieb.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Household Rituals",
+    "price": 5
   },
   {
-    "id": "rudrabhishe",
-    "title": "Rudrabhishek Puja",
-    "description": "Invoke Lord Shiva for strength, protection, and spiritual growth.",
-    "image": "/assets/pujari.png",
-    "price": 6000,
-    "category": "spiritual"
+    "title": "Navratri Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799257/navratri-puja_1_uqcxf6.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Ancestral & Remedial",
+    "price": 5
   },
   {
-    "id": "bhagva",
-    "title": "Bhagavat Katha",
-    "description": "Listen to the divine stories of Lord Krishna and his leelas.",
-    "image": "/assets/pujas/bhagwat.jpg",
-    "price": 6000,
-    "category": "spiritual"
+    "title": "Birthday Puja",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799256/birthday-puja_karmre.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Life Events",
+    "price": 5
+  },
+  {
+    "title": "Sundar Kand Path",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799256/Hanuman-Chalisa-Path_v7zkbk.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Life Events",
+    "price": 5
+  },
+  {
+    "title": "Pind Daan Path",
+    "image": "https://res.cloudinary.com/dzg1bmddg/image/upload/v1751799257/pitra-dosh-puja_vfb7vp.webp",
+    "description": "Rudrabhishek is a powerful ritual to worship Lord Shiva. It removes negativity and grants health, prosperity, and spiritual growth.",
+    "category": "Ancestral & Remedial",
+    "price": 5
   }
 ]
