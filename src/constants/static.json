@@ -7,7 +7,8 @@
       { "label": "Astrology", "link": "/astrology", "subMenu": [] },
       { "label": "Braj Shop", "link": "/brajshop", "subMenu": [] },
       { "label": "Horoscope", "link": "/horoscope", "subMenu": [] },
-      { "label": "Braj Yatra", "link": "/braj-yatra", "subMenu": [] }
+      { "label": "Braj Yatra", "link": "/braj-yatra", "subMenu": [] },
+      { "label": "About Us", "link": "/about-us", "subMenu": [] }
     ]
   }
 }

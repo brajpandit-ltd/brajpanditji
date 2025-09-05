@@ -17,7 +17,7 @@ const articles: Article[] = [
     title: "Significance of Raksha Bandhan Puja",
     description:
       "Explore the spiritual importance of Raksha Bandhan rituals and how they strengthen the bond between siblings.",
-    image: "/assets/articles/premmandir.png",
+    image: "/assets/articles/temple.jpg",
     date: "August 30, 2025",
   },
   {
