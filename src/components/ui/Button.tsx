@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
-  onClick?: (event: React.MouseEvent) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
 
   type?: "button" | "submit" | "reset";
@@ -25,11 +25,10 @@ interface ButtonProps {
   iconPosition?: "left" | "right";
 
   children?: React.ReactNode;
-  [key: string]: any; // Allow additional props
 }
 
 const Button = ({
-  type,
+  type = "button",
   label,
   children,
   disabled = false,
@@ -44,6 +43,7 @@ const Button = ({
 }: ButtonProps) => {
   let btnStyle = "";
   let btnSize = "";
+
   switch (variant) {
     case "primary":
       btnStyle =
@@ -92,8 +92,10 @@ const Button = ({
 
   return (
     <button
-      type={type || "button"}
-      className={`flex items-center justify-center gap-1 rounded-[40px] cursor-pointer ${btnStyle} ${btnSize} ${disabled ? "not-allowed" : "pointer"} ${className}`}
+      type={type}
+      className={`flex items-center justify-center gap-1 rounded-[40px] cursor-pointer ${btnStyle} ${btnSize} ${
+        disabled ? "not-allowed" : "pointer"
+      } ${className}`}
       onClick={onClick}
       disabled={disabled}
       {...props}
@@ -107,6 +109,5 @@ const Button = ({
     </button>
   );
 };
-
 
 export default Button;

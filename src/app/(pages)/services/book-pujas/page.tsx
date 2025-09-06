@@ -203,7 +203,7 @@ export default function BookPujaPage() {
           <div className="mt-6 bg-gray-50 p-4 rounded-lg shadow-inner flex flex-col items-center">
             <h3 className="font-semibold mb-2">Scan to Pay</h3>
             {/* Replace with your QR code image */}
-            <img
+            <Image
               src="/assets/qr.jpeg"
               alt="QR Code"
               className="w-40 h-40 mb-3"
