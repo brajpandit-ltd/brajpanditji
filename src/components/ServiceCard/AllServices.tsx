@@ -3,7 +3,7 @@
 import pujas from "@/data/pujas.json";
 import { Puja } from "@/types/puja";
 import { AllServicesCard } from "./AllServicesCard";
-import { ServiceCard } from "./ServiceCard";
+// import { ServiceCard } from "./ServiceCard";
 
 export function AllServices() {
   // Group pujas by category

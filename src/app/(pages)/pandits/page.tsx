@@ -1,5 +1,7 @@
 // src/app/(pages)/pandits/page.tsx
 
+"use client";
+
 import { PanditGrid } from "@/components/PanditCard/PanditGrid";
 
 export default function PanditsPage() {
