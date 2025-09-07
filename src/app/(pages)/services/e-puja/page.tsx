@@ -1,10 +1,8 @@
 import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import React, { Suspense } from "react";
 
-import services from "@/services/services";
 import SearchHeader from "../SearchHeader";
+import EPujaServices from "./EPujaServices";
 
 export const metadata: Metadata = {
   title: "Book Pooja In Temples Across India",
@@ -28,25 +26,7 @@ const pujaCategories = [
   },
 ];
 
-const page = async ({ searchParams }: { searchParams: any }) => {
-  const params = searchParams;
-
-  const getQueryParams = () => {
-    const query = new URLSearchParams();
-    if (params.searchQuery) query.set("searchQuery", params.searchQuery);
-    if (params.category) query.set("category", params.category);
-
-    return query.toString();
-  };
-
-  let ePujas: any = [];
-  try {
-    const { data: pujas } = await services.ePujas(getQueryParams());
-    ePujas = pujas;
-  } catch (error: any) {
-    console.error("Error fetching e-pooja services:", error?.message);
-  }
-
+const page = async () => {
   return (
     <>
       <section className="px-6 py-8 md:py-12 lg:py-16 text-center bg-amber-100">
@@ -68,28 +48,7 @@ const page = async ({ searchParams }: { searchParams: any }) => {
         </Suspense>
 
         <Suspense fallback={<p>Loading...</p>}>
-          <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {ePujas?.map((puja: any, idx: number) => (
-              <div
-                key={puja.slug + idx}
-                className="w-full min-w-[230px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow group snap-start"
-              >
-                <Link href={`/services/e-puja/${puja.slug}`}>
-                  <Image
-                    src={puja?.bannerImage}
-                    alt={puja?.title}
-                    width={230}
-                    height={100}
-                    className="object-cover h-[150px] group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="p-2">
-                    <h3 className="text-sm font-bold">{puja?.title}</h3>
-                    <p className="text-xs line-clamp-2">{puja.subtitle}</p>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </section>
+          <EPujaServices />
         </Suspense>
       </div>
     </>

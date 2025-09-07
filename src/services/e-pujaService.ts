@@ -2,7 +2,8 @@ import data from "@/constants/ePujas.json";
 import { getUrl } from "@/utils/unitsFun";
 
 export const getEPujas = (search: string, isServer: boolean) => {
-  const { searchParams } = getUrl(search, isServer);
+  const url = getUrl(search, isServer);
+  const searchParams = url.searchParams;
   const { ePujas: upcommingPujas } = data;
 
   const type = searchParams.get("type");

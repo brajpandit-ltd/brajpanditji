@@ -13,19 +13,16 @@ const FAQs = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Frequently Asked{" "}
-              <span className="bg-gradient-divine bg-clip-text text-transparent">
-                Questions
-              </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+              Frequently Asked <span className="text-primary">Questions</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
               Find answers to common questions about our Krishna Janmashtami
               puja services
             </p>
           </div>
 
-          <Card className="p-8 shadow-sacred">
+          <Card className="p-8 border-none !shadow-none">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem
@@ -48,20 +45,20 @@ const FAQs = () => {
             </Accordion>
           </Card>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <p className="text-lg text-muted-foreground mb-6">
               Still have questions? We&apos;re here to help!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+91-XXXXXXXXXX"
-                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-divine text-white rounded-lg font-semibold hover:shadow-divine transition-all duration-300"
+                href="tel:+919876543210."
+                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-divine  rounded-lg font-semibold hover:shadow-divine transition-all duration-300"
               >
-                Call Us: +91-XXXXXXXXXX
+                Call Us: +91 98765 43210.
               </a>
               <a
-                href="https://wa.me/91XXXXXXXXXX"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+                href="https://wa.me/+919876543210."
+                className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary transition-all duration-300"
               >
                 WhatsApp Us
               </a>

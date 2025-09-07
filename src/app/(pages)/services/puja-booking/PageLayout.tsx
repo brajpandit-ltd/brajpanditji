@@ -54,10 +54,10 @@ const PageLayout = () => {
 
   return (
     <div className="min-h-screen px-4 py-14 bg-gradient-to-br">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 dark:bg-gray-900 rounded-3xl overflow-hidden">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 rounded-3xl overflow-hidden">
         {/* Puja Information */}
         <div className="p-8 md:p-12">
-          <div className="rounded-2xl mb-6 w-full h-64 object-cover shadow-xl border border-yellow-300 dark:border-yellow-800">
+          <div className="relative rounded-2xl mb-6 w-full h-64 object-cover shadow-xl border border-yellow-300 dark:border-yellow-800">
             <Image
               src={pujaService?.thumbnail || "/assets/pujas/default.jpg"}
               alt={pujaService?.title || "Puja Image"}

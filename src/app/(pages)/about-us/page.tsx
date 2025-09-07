@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/common";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-pink-50 to-orange-100 dark:from-gray-900 dark:via-gray-800 dark:to-black px-4 py-12">
-      <div className="max-w-5xl mx-auto rounded-3xl shadow-xl overflow-hidden border border-yellow-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
+    <div className="min-h-screen bg-gradient-to-brpx-4 py-12">
+      <div className="w-full mx-auto rounded-3xl shadow-xl overflow-hidden backdrop-blur-md">
         <div className="flex flex-col md:flex-row items-center gap-8 p-8 md:p-16">
           {/* Left: Image */}
           <div className="flex-1 flex justify-center">
@@ -58,18 +59,9 @@ const AboutUs = () => {
               </li>
             </ul>
             <div className="flex gap-4">
-              <Button
-                label="Book a Puja"
-                href="/services"
-                variant="primary"
-                className="px-6"
-              />
-              <Button
-                label="Contact Us"
-                href="/contact"
-                variant="secondary"
-                className="px-6"
-              />
+              <Link href="/services/e-puja">
+                <Button label="Book a Puja" variant="primary" />
+              </Link>
             </div>
           </div>
         </div>

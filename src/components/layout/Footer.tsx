@@ -5,6 +5,12 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 
+const Logo = ({ logo }: { logo: string }) => (
+  <Link href="/" className="flex items-center">
+    <Image src={logo} alt="brajpandit logo" width={135} height={53} />
+  </Link>
+);
+
 const Footer: React.FC = () => {
   const { t } = useTranslation();
 
@@ -13,44 +19,45 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
         {/* About */}
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-yellow-400">
-            {t("footer.about_title")}
-          </h3>
+          <Logo logo="/braj-pandit-logo.svg" />
           <p className="text-gray-300 dark:text-gray-400 leading-relaxed text-justify">
-            {t("footer.about_text")}
+            Welcome to Braj pandit – your trusted source for online puja
+            services, astrology consultations, prasad delivery, and spiritual
+            essentials like Rudraksha, Shaligrams, and Yantras.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold mb-4 text-yellow-400">
-            {t("footer.quick_links")}
+            Quick Links
           </h3>
           <ul className="space-y-2">
             <li>
               <Link href="/" className="hover:text-yellow-300 transition">
-                {t("footer.links.home")}
+                Home
               </Link>
             </li>
             <li>
-              <a href="/products" className="hover:text-yellow-300 transition">
-                {t("footer.links.products")}
-              </a>
+              <Link
+                href="/services/e-puja"
+                className="hover:text-yellow-300 transition"
+              >
+                E Pujas
+              </Link>
             </li>
             <li>
-              <a href="/blogs" className="hover:text-yellow-300 transition">
-                {t("footer.links.blogs")}
-              </a>
+              <Link href="/blogs" className="hover:text-yellow-300 transition">
+                Vedic Gyan
+              </Link>
             </li>
             <li>
-              <a href="/booking" className="hover:text-yellow-300 transition">
-                {t("footer.links.booking")}
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-yellow-300 transition">
-                {t("footer.links.contact")}
-              </a>
+              <Link
+                href="/booking"
+                className="hover:text-yellow-300 transition"
+              >
+                About Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -61,9 +68,17 @@ const Footer: React.FC = () => {
             {t("footer.contact")}
           </h3>
           <ul className="space-y-1 text-gray-300 dark:text-gray-400">
-            <li>📞 +91 8595009640</li>
-            <li>📞 +91 8979923233</li>
-            <li>📧 brajpandit123@gmail.com</li>
+            <li>
+              <a href="tel:+918595009640">📞 +91 8595009640</a>
+            </li>
+            <li>
+              <a href="tel:+918595009640">📞 +91 8595009640</a>
+            </li>
+            <li>
+              <a href="mailto:brajpandit123@gmail.com ">
+                📧 brajpandit123@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -115,12 +130,13 @@ const Footer: React.FC = () => {
 
       {/* Copyright */}
       <div className="text-center mt-10 text-gray-400 dark:text-gray-500 text-sm">
-        © {new Date().getFullYear()} BrajPandit. {t("footer.rights_reserved")}
+        © {new Date().getFullYear()} BrajPandit. All rights reserved.
       </div>
 
       {/* Legal Warning */}
       <div className="text-center text-xs text-red-300 dark:text-red-400 mt-2 italic">
-        ⚠️ {t("footer.legal_warning")}
+        ⚠️ Unauthorized copying or reuse of this code or design is strictly
+        prohibited. Legal action may be taken against violators.
       </div>
     </footer>
   );
